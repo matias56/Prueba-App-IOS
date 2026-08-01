@@ -1,21 +1,16 @@
-name: GitHub Actions Demo
+name: iOS Build Workflow
 
-# 1. Define the trigger event
-on: [push]
+on:
+  push:
+    branches: [ "main" ]
 
-# 2. Define the execution blocks
 jobs:
   say-hello-job:
-    # Choose the operating system
-    runs-on: IOS
+    runs-on: macos-latest  # <--- Change 'IOS' to 'macos-latest'
     
-    # Define the sequential tasks
     steps:
-      - name: Check out repository code
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Print a welcome message
-        run: echo "Hello World! GitHub Actions is running successfully."
-
-      - name: Show the runner's OS version
-        run: lsb_release -a
+      - name: Say Hello
+        run: echo "Hello from macOS runner!"
