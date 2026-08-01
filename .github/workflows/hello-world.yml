@@ -17,7 +17,7 @@ jobs:
         run: npm install --legacy-peer-deps
     
       - name: Generate iOS Xcode project
-        run: npx expo prebuild --platform ios
+        run: npx --yes expo prebuild --platform ios
       
       - name: Build the app
         working-directory: ./ios
