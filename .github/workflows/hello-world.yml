@@ -24,8 +24,9 @@ jobs:
         run: npm install --legacy-peer-deps
       - name: Patch glog for modern Xcode
         run: |
-          sed -i '' 's/-arch armv7//g' node_modules/react-native/scripts/ios-configure-glog.sh
           sed -i '' 's/-arch armv7s//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/-arch armv7//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
       - name: Install iOS Pods (Native Dependencies)
         working-directory: ./ios
         run: pod install
