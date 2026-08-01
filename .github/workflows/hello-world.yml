@@ -20,7 +20,7 @@ jobs:
         run: npx expo prebuild --platform ios
       
       - name: Build the app
-        working-directory: node_modules/react-native/template/ios/HelloWorld.xcodeproj
+        working-directory: ./ios
 
 
         run: |
