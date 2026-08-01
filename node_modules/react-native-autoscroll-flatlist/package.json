@@ -1,0 +1,57 @@
+{
+  "name": "react-native-autoscroll-flatlist",
+  "version": "1.11.0",
+  "description": "An enhanced React Native FlatList component to provide auto-scrolling functionality",
+  "author": "Kelvin Chu <chubillkelvin@gmail.com> (github.com/RageBill)",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "reactjs",
+    "react-native",
+    "scroll",
+    "scrolling",
+    "auto-scroll",
+    "auto-scrolling",
+    "flatlist",
+    "chat",
+    "chat client",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RageBill/react-native-autoscroll-flatlist.git"
+  },
+  "scripts": {
+    "ts-node": "TS_NODE_PROJECT=./script/tsconfig.json ts-node",
+    "check": "yarn ts-node script/check.ts",
+    "format": "yarn ts-node script/format.ts",
+    "build": "yarn ts-node script/build.ts"
+  },
+  "peerDependencies": {
+    "react": "17.0.2",
+    "react-native": "0.64.2"
+  },
+  "devDependencies": {
+    "@pinnacle0/eslint-plugin": "0.1.13",
+    "@types/fs-extra": "9.0.11",
+    "@types/react": "17.0.16",
+    "@types/react-native": "0.64.12",
+    "@types/yargs": "16.0.1",
+    "@typescript-eslint/eslint-plugin": "4.22.0",
+    "@typescript-eslint/parser": "4.22.0",
+    "chalk": "4.1.1",
+    "eslint": "7.25.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-react": "7.23.2",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "fs-extra": "9.1.0",
+    "prettier": "2.2.1",
+    "ts-node": "9.1.1",
+    "typescript": "4.2.4",
+    "yargs": "16.2.0"
+  },
+  "types": "index.d.ts"
+}
