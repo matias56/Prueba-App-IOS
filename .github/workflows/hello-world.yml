@@ -15,7 +15,8 @@ jobs:
      
       - name: Install dependencies
         run: npm install --legacy-peer-deps
-    
+      - name: Install Expo CLI globally
+        run: npm install -g expo-cli
       - name: Generate iOS Xcode project
         run: npx --yes expo prebuild --platform ios
       
