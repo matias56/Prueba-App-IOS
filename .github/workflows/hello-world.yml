@@ -12,14 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Build the app
-        run: |
-          xcodebuild build \
-            -scheme 'Prueba-App-IOS' \
-            -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15' \
-            CODE_SIGNING_ALLOWED='NO'
-
+     
       - name: Install dependencies
         run: npm install
     
