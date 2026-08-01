@@ -5,12 +5,17 @@ on:
     branches: [ "main" ]
 
 jobs:
-  say-hello-job:
-    runs-on: macos-latest  # <--- Change 'IOS' to 'macos-latest'
+  build-ios:
+    runs-on: macos-latest
     
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Say Hello
-        run: echo "Hello from macOS runner!"
+      - name: Build the app
+        run: |
+          xcodebuild build \
+            -scheme 'Prueba-App-IOS' \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15' \
+            CODE_SIGNING_ALLOWED='NO'
