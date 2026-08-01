@@ -27,7 +27,8 @@ jobs:
         run: npx expo prebuild --platform ios
       
       - name: Build the app
-        working-directory: node_modules/@react-native-community/masked-view/ios/RNCMaskedView.xcodeproj/project.pbxproj
+        working-directory: node_modules/react-native/template/ios/HelloWorld.xcodeproj
+
 
         run: |
           xcodebuild build \
