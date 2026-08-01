@@ -1,0 +1,48 @@
+const initialState = {
+  userID: "invitado",
+  username: "",
+  lastname: "",
+  empresa: "",
+  cargo: "",
+  actividad: "",
+  especies: [],
+  detallesEspecies: [],
+  userImage: "",
+  isAuthorized: false,
+  misIntereses: [],
+  favoritosCanales: [],
+  favoritosPodcast: [],
+  idioma: "",
+  country: "",
+  movil: "",
+  likes: [],
+  //password: "",
+  //errors: {},
+  //isLoading: false,
+};
+/*
+const initialState = {
+  userID: "943",
+  username: "sergio",
+  lastname: "agri",
+  empresa: "Agrinews SL",
+  cargo: "1",
+  actividad: "2",
+  especies: [1, 2, 3, 4, 5, 6],
+  detallesEspecies: [1, 2, 3, 4, 5, 6],
+  userImage:
+    "https://socialagri.com/imgperfil/2f885d0fbe2e131bfc9d98363e55d1d417",
+  isAuthorized: false,
+  misIntereses: [1, 2, 3, 4, 5, 6, 7],
+  favoritosCanales: [],
+  favoritosPodcast: [],
+  idioma: "Español",
+  country: "España",
+  movil: "+346027755478",
+  likes: ["3127", "247", "3394", "3356", "3336", "3808"],
+  //password: "",
+  //errors: {},
+  //isLoading: false,
+};*/
+
+export default initialState;

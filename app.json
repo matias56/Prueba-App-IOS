@@ -1,0 +1,51 @@
+{
+  "expo": {
+    "name": "agriFM",
+    "slug": "agrifm",
+    "version": "1.0.9",
+    "orientation": "portrait",
+    "icon": "./assets/img/Logo.png",
+    "scheme": "com.agrinews.agrifm",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#422c5e"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.agrinews.agrifm",
+      "icon": "./assets/icon.png",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow giving access to your camera allows you to change your profile picture.",
+        "NSPhotoLibraryUsageDescription": "Allow giving access to your camera allows you to change your profile picture.",
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA_ROLL",
+        "AUDIO_RECORDING"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#422c5e"
+      },
+      "package": "com.agrinews.agrifm",
+      "versionCode": 10
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": ""
+  }
+}
