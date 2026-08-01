@@ -12,24 +12,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-     
-      - name: Install dependencies
+      - name: Install initial dependencies
         run: npm install --legacy-peer-deps
-      - name: Install Expo CLI globally
-        run: npm install -g expo-cli
+
       - name: Generate iOS Xcode project
         run: npx --yes expo prebuild --platform ios --no-install
+
       - name: Install native dependencies
-        # Manually run the install with the legacy flag after prebuild
+        # This MUST finish before the patch runs
         run: npm install --legacy-peer-deps
+
       - name: Patch glog for modern Xcode
+        # This safely strips out all three banned 32-bit architectures at once
         run: |
-          sed -i '' 's/-arch armv7s//g' node_modules/react-native/scripts/ios-configure-glog.sh
-          sed -i '' 's/-arch armv7//g' node_modules/react-native/scripts/ios-configure-glog.sh
-          sed -i '' 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
+
       - name: Install iOS Pods (Native Dependencies)
         working-directory: ./ios
         run: pod install
+
       - name: Build the app
         working-directory: ./ios
         run: |
