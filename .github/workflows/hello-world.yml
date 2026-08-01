@@ -25,3 +25,13 @@ jobs:
     
       - name: Generate iOS Xcode project
         run: npx expo prebuild --platform ios
+      
+      - name: Build the app
+        working-directory: node_modules/@react-native-community/masked-view/ios/RNCMaskedView.xcodeproj/project.pbxproj
+
+        run: |
+          xcodebuild build \
+            -scheme 'Prueba-App-IOS' \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15' \
+            CODE_SIGNING_ALLOWED='NO'
