@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+
+# 1. Define the trigger event
+on: [push]
+
+# 2. Define the execution blocks
+jobs:
+  say-hello-job:
+    # Choose the operating system
+    runs-on: IOS
+    
+    # Define the sequential tasks
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+
+      - name: Print a welcome message
+        run: echo "Hello World! GitHub Actions is running successfully."
+
+      - name: Show the runner's OS version
+        run: lsb_release -a
