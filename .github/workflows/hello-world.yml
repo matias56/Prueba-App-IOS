@@ -15,22 +15,7 @@ jobs:
       - name: Install initial dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Generate iOS Xcode project
-        run: npx --yes expo prebuild --platform ios --no-install
-
-      - name: Install native dependencies
-        # This MUST finish before the patch runs
-        run: npm install --legacy-peer-deps
-
-      - name: Patch glog for modern Xcode
-        # This safely strips out all three banned 32-bit architectures at once
-        run: |
-          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
-
-      - name: Install iOS Pods (Native Dependencies)
-        working-directory: ./ios
-        run: pod install
-
+      
       - name: Build the app
         working-directory: ./ios
         run: |
