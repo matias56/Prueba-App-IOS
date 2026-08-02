@@ -32,17 +32,13 @@ jobs:
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
       - name: Patch core glog for modern Xcode
-        # Destroys CocoaPods' 32-bit environment variables before safely stripping the script
         run: |
-          echo '#!/bin/bash' > clean_glog.sh
-          echo 'unset CC CXX CFLAGS CXXFLAGS LDFLAGS' >> clean_glog.sh
-          tail -n +2 node_modules/react-native/scripts/ios-configure-glog.sh >> clean_glog.sh
-          
-          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' clean_glog.sh
-          sed -i '' 's/arm-apple-darwin/arm64-apple-darwin/g' clean_glog.sh
-          
-          mv clean_glog.sh node_modules/react-native/scripts/ios-configure-glog.sh
-          chmod +x node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/arm-apple-darwin/arm64-apple-darwin/g' node_modules/react-native/scripts/ios-configure-glog.sh
+
+      - name: Clear Poisoned CocoaPods Cache
+        # THIS IS THE MISSING LINK! We must force CocoaPods to read the patched file.
+        run: rm -rf ~/Library/Caches/CocoaPods
 
       - name: Install iOS Pods (Native Dependencies)
         working-directory: ./ios
