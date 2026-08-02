@@ -12,9 +12,24 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install initial dependencies
+      - name: Install dependencies
         run: npm install --legacy-peer-deps
 
+      - name: Clean up broken manual folder
+        # This deletes the corrupted Windows folder so we start fresh
+        run: rm -rf ios
+
+      - name: Generate correct Expo iOS project
+        # Let the cloud build a perfect, Expo-linked 'agriFM' folder
+        run: npx --yes expo prebuild --platform ios --no-install
+
+      - name: Bump minimum iOS version to 13.0 automatically
+        # This safely edits the Podfile without breaking the auto-linking scripts
+        run: sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
+
+      - name: Patch glog for modern Xcode
+        run: |
+          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
 
       - name: Install iOS Pods (Native Dependencies)
         working-directory: ./ios
