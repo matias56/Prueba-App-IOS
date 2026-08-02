@@ -32,6 +32,7 @@ jobs:
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
       - name: Completely Overwrite glog configuration
+        # This replaces the file, destroys CocoaPods' variables, forces arm64, and safely fetches GNU configs
         run: |
           cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
           #!/bin/bash
@@ -51,9 +52,10 @@ jobs:
               rm test-driver
           fi
           
-          # 3. Update outdated GNU autotools scripts to recognize Apple Silicon
-          curl -s -o config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
-          curl -s -o config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+          # 3. Safely download modern Apple Silicon configs (Added -L and chmod +x)
+          curl -sL -o config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+          curl -sL -o config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+          chmod +x config.sub config.guess
           
           # 4. Configure with the correct Apple Silicon host
           ./configure --host=arm64-apple-darwin
