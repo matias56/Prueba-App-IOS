@@ -15,7 +15,11 @@ jobs:
       - name: Install initial dependencies
         run: npm install --legacy-peer-deps
 
-      
+
+      - name: Install iOS Pods (Native Dependencies)
+        working-directory: ./ios
+        run: pod install
+
       - name: Build the app
         working-directory: ./ios
         run: |
