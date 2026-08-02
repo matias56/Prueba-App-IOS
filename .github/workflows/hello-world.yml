@@ -32,7 +32,6 @@ jobs:
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
       - name: Completely Overwrite glog configuration
-        # This completely replaces the file, destroying CocoaPods' variables and forcing arm64
         run: |
           cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
           #!/bin/bash
@@ -52,10 +51,14 @@ jobs:
               rm test-driver
           fi
           
-          # 3. Configure with the correct Apple Silicon host
+          # 3. Update outdated GNU autotools scripts to recognize Apple Silicon
+          curl -s -o config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
+          curl -s -o config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
+          
+          # 4. Configure with the correct Apple Silicon host
           ./configure --host=arm64-apple-darwin
           
-          # 4. Copy the required headers back to React Native
+          # 5. Copy the required headers back to React Native
           EXPORTED_INCLUDE_DIR="exported/glog"
           mkdir -p exported/glog
           cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/"
