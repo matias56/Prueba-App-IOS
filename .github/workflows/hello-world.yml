@@ -28,13 +28,16 @@ jobs:
       - name: Bump minimum iOS version to 13.0
         run: sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
 
-      - name: Disable Flipper (Fixes Flipper-Glog armv7 bug)
-        # This tells CocoaPods to completely skip downloading Flipper and its broken dependencies
+      - name: Disable Flipper (Fixes Flipper-Glog bug)
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
       - name: Patch core glog for modern Xcode
+        # Safely strips architectures AND prevents autotools from injecting them back
         run: |
-          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/-arch armv7s//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/-arch armv7//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
+          sed -i '' 's/arm-apple-darwin/arm64-apple-darwin/g' node_modules/react-native/scripts/ios-configure-glog.sh
 
       - name: Install iOS Pods (Native Dependencies)
         working-directory: ./ios
