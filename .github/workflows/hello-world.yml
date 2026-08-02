@@ -26,13 +26,15 @@ jobs:
           rm -rf agriFM
 
       - name: Bump minimum iOS version to 13.0
-        run: sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
+        # Fixes BOTH the Podfile and the main App's internal Xcode configuration
+        run: |
+          sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
+          sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = .*;/IPHONEOS_DEPLOYMENT_TARGET = 13.0;/g' ios/agriFM.xcodeproj/project.pbxproj
 
       - name: Disable Flipper (Fixes Flipper-Glog bug)
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
       - name: Force all Native Pods to iOS 13.0
-        # Injects a ruby script into the Podfile to forcefully upgrade all outdated third-party dependencies
         run: |
           ruby -e "
           file = 'ios/Podfile'
