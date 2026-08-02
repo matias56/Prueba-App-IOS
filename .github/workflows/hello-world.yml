@@ -16,11 +16,9 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Purge accidental Expo contamination
-        # This destroys the rogue dependency that was crashing CocoaPods earlier
         run: npm uninstall expo --legacy-peer-deps
 
       - name: Generate Clean iOS Project
-        # Uses the official core generator to build a perfect, bare ios folder named agriFM
         run: |
           rm -rf ios
           npx react-native init agriFM --version 0.64.3 --skip-install
@@ -28,11 +26,13 @@ jobs:
           rm -rf agriFM
 
       - name: Bump minimum iOS version to 13.0
-        # Safely updates the Podfile deployment target
         run: sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
 
-      - name: Patch glog for modern Xcode
-        # Strips out the banned 32-bit architectures
+      - name: Disable Flipper (Fixes Flipper-Glog armv7 bug)
+        # This tells CocoaPods to completely skip downloading Flipper and its broken dependencies
+        run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
+
+      - name: Patch core glog for modern Xcode
         run: |
           sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
 
