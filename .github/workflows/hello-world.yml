@@ -31,13 +31,42 @@ jobs:
       - name: Disable Flipper (Fixes Flipper-Glog bug)
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
-      - name: Patch core glog for modern Xcode
+      - name: Completely Overwrite glog configuration
+        # This completely replaces the file, destroying CocoaPods' variables and forcing arm64
         run: |
-          sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
-          sed -i '' 's/arm-apple-darwin/arm64-apple-darwin/g' node_modules/react-native/scripts/ios-configure-glog.sh
+          cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
+          #!/bin/bash
+          set -e
+          
+          # 1. Destroy the poisoned CocoaPods environment variables
+          unset CC CXX CFLAGS CXXFLAGS LDFLAGS
+          
+          # 2. Force modern 64-bit architecture
+          export CC="$(xcrun -find -sdk iphoneos cc) -arch arm64 -isysroot $(xcrun -sdk iphoneos --show-sdk-path)"
+          export CXX="$CC"
+          export CFLAGS="-arch arm64"
+          export CXXFLAGS="-arch arm64"
+          export LDFLAGS="-arch arm64"
+          
+          if [ -h "test-driver" ]; then
+              rm test-driver
+          fi
+          
+          # 3. Configure with the correct Apple Silicon host
+          ./configure --host=arm64-apple-darwin
+          
+          # 4. Copy the required headers back to React Native
+          EXPORTED_INCLUDE_DIR="exported/glog"
+          mkdir -p exported/glog
+          cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/raw_logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/stl_logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/vlog_is_on.h "$EXPORTED_INCLUDE_DIR/"
+          EOF
+          chmod +x node_modules/react-native/scripts/ios-configure-glog.sh
 
       - name: Clear Poisoned CocoaPods Cache
-        # THIS IS THE MISSING LINK! We must force CocoaPods to read the patched file.
         run: rm -rf ~/Library/Caches/CocoaPods
 
       - name: Install iOS Pods (Native Dependencies)
