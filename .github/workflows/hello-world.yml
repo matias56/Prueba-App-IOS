@@ -110,3 +110,8 @@ jobs:
             -sdk iphonesimulator \
             -destination 'generic/platform=iOS Simulator' \
             CODE_SIGNING_ALLOWED='NO'
+      - name: Upload iOS App Artifact
+        uses: actions/upload-artifact@v4
+        with:
+         name: agriFM-Simulator-App
+         path: ios/build/Build/Products/Debug-iphonesimulator/agriFM.app
