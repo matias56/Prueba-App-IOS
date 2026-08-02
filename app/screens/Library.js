@@ -180,7 +180,7 @@ export default function Library(props) {
         });
       })
 
-      .then(function () {});
+      .then(function () { });
   };
 
   const removeCanal = (valueID) => {
@@ -201,7 +201,7 @@ export default function Library(props) {
         setFavoritesUpdateCanales(initialState.favoritosCanales);
       })
 
-      .then(function () {});
+      .then(function () { });
   };
 
   function onLongPressCanal(value, id) {
@@ -288,7 +288,7 @@ export default function Library(props) {
     >
       <SvgCssUri
         style={{ width: 150, height: 75, alignSelf: "center", marginTop: 20 }}
-        uri="https://socialagri.com/agriFM/wp-content/themes/agriFM/mobile/img/logo-aginewsfm4.svg"
+        uri="./assets/img/Logo.png"
       />
       <Image
         source={require("../../assets/img/user-guest.jpg")}
@@ -405,32 +405,32 @@ export default function Library(props) {
             >
               {canales.map((l, i) =>
                 l.id == favoritesUpdateCanales[0] ||
-                l.id == favoritesUpdateCanales[1] ||
-                l.id == favoritesUpdateCanales[2] ||
-                l.id == favoritesUpdateCanales[3] ||
-                l.id == favoritesUpdateCanales[4] ||
-                l.id == favoritesUpdateCanales[5] ||
-                l.id == favoritesUpdateCanales[6] ||
-                l.id == favoritesUpdateCanales[7] ||
-                l.id == favoritesUpdateCanales[8] ||
-                l.id == favoritesUpdateCanales[9] ||
-                l.id == favoritesUpdateCanales[10] ||
-                l.id == favoritesUpdateCanales[11] ||
-                l.id == favoritesUpdateCanales[12] ||
-                l.id == favoritesUpdateCanales[13] ||
-                l.id == favoritesUpdateCanales[14] ||
-                l.id == favoritesUpdateCanales[15] ||
-                l.id == favoritesUpdateCanales[16] ||
-                l.id == favoritesUpdateCanales[17] ||
-                l.id == favoritesUpdateCanales[18] ||
-                l.id == favoritesUpdateCanales[19] ||
-                l.id == favoritesUpdateCanales[20] ||
-                l.id == favoritesUpdateCanales[21] ||
-                l.id == favoritesUpdateCanales[22] ||
-                l.id == favoritesUpdateCanales[23] ||
-                l.id == favoritesUpdateCanales[24] ||
-                l.id == favoritesUpdateCanales[25] ||
-                l.id == favoritesUpdateCanales[26] ? (
+                  l.id == favoritesUpdateCanales[1] ||
+                  l.id == favoritesUpdateCanales[2] ||
+                  l.id == favoritesUpdateCanales[3] ||
+                  l.id == favoritesUpdateCanales[4] ||
+                  l.id == favoritesUpdateCanales[5] ||
+                  l.id == favoritesUpdateCanales[6] ||
+                  l.id == favoritesUpdateCanales[7] ||
+                  l.id == favoritesUpdateCanales[8] ||
+                  l.id == favoritesUpdateCanales[9] ||
+                  l.id == favoritesUpdateCanales[10] ||
+                  l.id == favoritesUpdateCanales[11] ||
+                  l.id == favoritesUpdateCanales[12] ||
+                  l.id == favoritesUpdateCanales[13] ||
+                  l.id == favoritesUpdateCanales[14] ||
+                  l.id == favoritesUpdateCanales[15] ||
+                  l.id == favoritesUpdateCanales[16] ||
+                  l.id == favoritesUpdateCanales[17] ||
+                  l.id == favoritesUpdateCanales[18] ||
+                  l.id == favoritesUpdateCanales[19] ||
+                  l.id == favoritesUpdateCanales[20] ||
+                  l.id == favoritesUpdateCanales[21] ||
+                  l.id == favoritesUpdateCanales[22] ||
+                  l.id == favoritesUpdateCanales[23] ||
+                  l.id == favoritesUpdateCanales[24] ||
+                  l.id == favoritesUpdateCanales[25] ||
+                  l.id == favoritesUpdateCanales[26] ? (
                   <View
                     style={{
                       width: windowWidth,
@@ -444,56 +444,56 @@ export default function Library(props) {
                             l.id == favoritesUpdateCanales[0]
                               ? favoritesUpdateCanales[0]
                               : l.id == favoritesUpdateCanales[1]
-                              ? favoritesUpdateCanales[1]
-                              : l.id == favoritesUpdateCanales[2]
-                              ? favoritesUpdateCanales[2]
-                              : l.id == favoritesUpdateCanales[3]
-                              ? favoritesUpdateCanales[3]
-                              : l.id == favoritesUpdateCanales[4]
-                              ? favoritesUpdateCanales[4]
-                              : l.id == favoritesUpdateCanales[5]
-                              ? favoritesUpdateCanales[5]
-                              : l.id == favoritesUpdateCanales[6]
-                              ? favoritesUpdateCanales[6]
-                              : l.id == favoritesUpdateCanales[7]
-                              ? favoritesUpdateCanales[7]
-                              : l.id == favoritesUpdateCanales[8]
-                              ? favoritesUpdateCanales[8]
-                              : l.id == favoritesUpdateCanales[9]
-                              ? favoritesUpdateCanales[9]
-                              : l.id == favoritesUpdateCanales[10]
-                              ? favoritesUpdateCanales[10]
-                              : l.id == favoritesUpdateCanales[11]
-                              ? favoritesUpdateCanales[11]
-                              : l.id == favoritesUpdateCanales[12]
-                              ? favoritesUpdateCanales[12]
-                              : l.id == favoritesUpdateCanales[13]
-                              ? favoritesUpdateCanales[13]
-                              : l.id == favoritesUpdateCanales[14]
-                              ? favoritesUpdateCanales[14]
-                              : l.id == favoritesUpdateCanales[15]
-                              ? favoritesUpdateCanales[15]
-                              : l.id == favoritesUpdateCanales[16]
-                              ? favoritesUpdateCanales[16]
-                              : l.id == favoritesUpdateCanales[17]
-                              ? favoritesUpdateCanales[17]
-                              : l.id == favoritesUpdateCanales[18]
-                              ? favoritesUpdateCanales[18]
-                              : l.id == favoritesUpdateCanales[19]
-                              ? favoritesUpdateCanales[19]
-                              : l.id == favoritesUpdateCanales[20]
-                              ? favoritesUpdateCanales[20]
-                              : l.id == favoritesUpdateCanales[21]
-                              ? favoritesUpdateCanales[21]
-                              : l.id == favoritesUpdateCanales[22]
-                              ? favoritesUpdateCanales[22]
-                              : l.id == favoritesUpdateCanales[23]
-                              ? favoritesUpdateCanales[23]
-                              : l.id == favoritesUpdateCanales[24]
-                              ? favoritesUpdateCanales[24]
-                              : l.id == favoritesUpdateCanales[25]
-                              ? favoritesUpdateCanales[25]
-                              : favoritesUpdateCanales[26],
+                                ? favoritesUpdateCanales[1]
+                                : l.id == favoritesUpdateCanales[2]
+                                  ? favoritesUpdateCanales[2]
+                                  : l.id == favoritesUpdateCanales[3]
+                                    ? favoritesUpdateCanales[3]
+                                    : l.id == favoritesUpdateCanales[4]
+                                      ? favoritesUpdateCanales[4]
+                                      : l.id == favoritesUpdateCanales[5]
+                                        ? favoritesUpdateCanales[5]
+                                        : l.id == favoritesUpdateCanales[6]
+                                          ? favoritesUpdateCanales[6]
+                                          : l.id == favoritesUpdateCanales[7]
+                                            ? favoritesUpdateCanales[7]
+                                            : l.id == favoritesUpdateCanales[8]
+                                              ? favoritesUpdateCanales[8]
+                                              : l.id == favoritesUpdateCanales[9]
+                                                ? favoritesUpdateCanales[9]
+                                                : l.id == favoritesUpdateCanales[10]
+                                                  ? favoritesUpdateCanales[10]
+                                                  : l.id == favoritesUpdateCanales[11]
+                                                    ? favoritesUpdateCanales[11]
+                                                    : l.id == favoritesUpdateCanales[12]
+                                                      ? favoritesUpdateCanales[12]
+                                                      : l.id == favoritesUpdateCanales[13]
+                                                        ? favoritesUpdateCanales[13]
+                                                        : l.id == favoritesUpdateCanales[14]
+                                                          ? favoritesUpdateCanales[14]
+                                                          : l.id == favoritesUpdateCanales[15]
+                                                            ? favoritesUpdateCanales[15]
+                                                            : l.id == favoritesUpdateCanales[16]
+                                                              ? favoritesUpdateCanales[16]
+                                                              : l.id == favoritesUpdateCanales[17]
+                                                                ? favoritesUpdateCanales[17]
+                                                                : l.id == favoritesUpdateCanales[18]
+                                                                  ? favoritesUpdateCanales[18]
+                                                                  : l.id == favoritesUpdateCanales[19]
+                                                                    ? favoritesUpdateCanales[19]
+                                                                    : l.id == favoritesUpdateCanales[20]
+                                                                      ? favoritesUpdateCanales[20]
+                                                                      : l.id == favoritesUpdateCanales[21]
+                                                                        ? favoritesUpdateCanales[21]
+                                                                        : l.id == favoritesUpdateCanales[22]
+                                                                          ? favoritesUpdateCanales[22]
+                                                                          : l.id == favoritesUpdateCanales[23]
+                                                                            ? favoritesUpdateCanales[23]
+                                                                            : l.id == favoritesUpdateCanales[24]
+                                                                              ? favoritesUpdateCanales[24]
+                                                                              : l.id == favoritesUpdateCanales[25]
+                                                                                ? favoritesUpdateCanales[25]
+                                                                                : favoritesUpdateCanales[26],
 
                           name: l.name,
                           image: l.acf.imagen_perfil,
@@ -507,56 +507,56 @@ export default function Library(props) {
                           l.id == favoritesUpdateCanales[0]
                             ? favoritesUpdateCanales[0]
                             : l.id == favoritesUpdateCanales[1]
-                            ? favoritesUpdateCanales[1]
-                            : l.id == favoritesUpdateCanales[2]
-                            ? favoritesUpdateCanales[2]
-                            : l.id == favoritesUpdateCanales[3]
-                            ? favoritesUpdateCanales[3]
-                            : l.id == favoritesUpdateCanales[4]
-                            ? favoritesUpdateCanales[4]
-                            : l.id == favoritesUpdateCanales[5]
-                            ? favoritesUpdateCanales[5]
-                            : l.id == favoritesUpdateCanales[6]
-                            ? favoritesUpdateCanales[6]
-                            : l.id == favoritesUpdateCanales[7]
-                            ? favoritesUpdateCanales[7]
-                            : l.id == favoritesUpdateCanales[8]
-                            ? favoritesUpdateCanales[8]
-                            : l.id == favoritesUpdateCanales[9]
-                            ? favoritesUpdateCanales[9]
-                            : l.id == favoritesUpdateCanales[10]
-                            ? favoritesUpdateCanales[10]
-                            : l.id == favoritesUpdateCanales[11]
-                            ? favoritesUpdateCanales[11]
-                            : l.id == favoritesUpdateCanales[12]
-                            ? favoritesUpdateCanales[12]
-                            : l.id == favoritesUpdateCanales[13]
-                            ? favoritesUpdateCanales[13]
-                            : l.id == favoritesUpdateCanales[14]
-                            ? favoritesUpdateCanales[14]
-                            : l.id == favoritesUpdateCanales[15]
-                            ? favoritesUpdateCanales[15]
-                            : l.id == favoritesUpdateCanales[16]
-                            ? favoritesUpdateCanales[16]
-                            : l.id == favoritesUpdateCanales[17]
-                            ? favoritesUpdateCanales[17]
-                            : l.id == favoritesUpdateCanales[18]
-                            ? favoritesUpdateCanales[18]
-                            : l.id == favoritesUpdateCanales[19]
-                            ? favoritesUpdateCanales[19]
-                            : l.id == favoritesUpdateCanales[20]
-                            ? favoritesUpdateCanales[20]
-                            : l.id == favoritesUpdateCanales[21]
-                            ? favoritesUpdateCanales[21]
-                            : l.id == favoritesUpdateCanales[22]
-                            ? favoritesUpdateCanales[22]
-                            : l.id == favoritesUpdateCanales[23]
-                            ? favoritesUpdateCanales[23]
-                            : l.id == favoritesUpdateCanales[24]
-                            ? favoritesUpdateCanales[24]
-                            : l.id == favoritesUpdateCanales[25]
-                            ? favoritesUpdateCanales[25]
-                            : favoritesUpdateCanales[26]
+                              ? favoritesUpdateCanales[1]
+                              : l.id == favoritesUpdateCanales[2]
+                                ? favoritesUpdateCanales[2]
+                                : l.id == favoritesUpdateCanales[3]
+                                  ? favoritesUpdateCanales[3]
+                                  : l.id == favoritesUpdateCanales[4]
+                                    ? favoritesUpdateCanales[4]
+                                    : l.id == favoritesUpdateCanales[5]
+                                      ? favoritesUpdateCanales[5]
+                                      : l.id == favoritesUpdateCanales[6]
+                                        ? favoritesUpdateCanales[6]
+                                        : l.id == favoritesUpdateCanales[7]
+                                          ? favoritesUpdateCanales[7]
+                                          : l.id == favoritesUpdateCanales[8]
+                                            ? favoritesUpdateCanales[8]
+                                            : l.id == favoritesUpdateCanales[9]
+                                              ? favoritesUpdateCanales[9]
+                                              : l.id == favoritesUpdateCanales[10]
+                                                ? favoritesUpdateCanales[10]
+                                                : l.id == favoritesUpdateCanales[11]
+                                                  ? favoritesUpdateCanales[11]
+                                                  : l.id == favoritesUpdateCanales[12]
+                                                    ? favoritesUpdateCanales[12]
+                                                    : l.id == favoritesUpdateCanales[13]
+                                                      ? favoritesUpdateCanales[13]
+                                                      : l.id == favoritesUpdateCanales[14]
+                                                        ? favoritesUpdateCanales[14]
+                                                        : l.id == favoritesUpdateCanales[15]
+                                                          ? favoritesUpdateCanales[15]
+                                                          : l.id == favoritesUpdateCanales[16]
+                                                            ? favoritesUpdateCanales[16]
+                                                            : l.id == favoritesUpdateCanales[17]
+                                                              ? favoritesUpdateCanales[17]
+                                                              : l.id == favoritesUpdateCanales[18]
+                                                                ? favoritesUpdateCanales[18]
+                                                                : l.id == favoritesUpdateCanales[19]
+                                                                  ? favoritesUpdateCanales[19]
+                                                                  : l.id == favoritesUpdateCanales[20]
+                                                                    ? favoritesUpdateCanales[20]
+                                                                    : l.id == favoritesUpdateCanales[21]
+                                                                      ? favoritesUpdateCanales[21]
+                                                                      : l.id == favoritesUpdateCanales[22]
+                                                                        ? favoritesUpdateCanales[22]
+                                                                        : l.id == favoritesUpdateCanales[23]
+                                                                          ? favoritesUpdateCanales[23]
+                                                                          : l.id == favoritesUpdateCanales[24]
+                                                                            ? favoritesUpdateCanales[24]
+                                                                            : l.id == favoritesUpdateCanales[25]
+                                                                              ? favoritesUpdateCanales[25]
+                                                                              : favoritesUpdateCanales[26]
                         )
                       }
                       containerStyle={{
@@ -634,56 +634,56 @@ export default function Library(props) {
                             l.id == favoritesUpdateCanales[0]
                               ? favoritesUpdateCanales[0]
                               : l.id == favoritesUpdateCanales[1]
-                              ? favoritesUpdateCanales[1]
-                              : l.id == favoritesUpdateCanales[2]
-                              ? favoritesUpdateCanales[2]
-                              : l.id == favoritesUpdateCanales[3]
-                              ? favoritesUpdateCanales[3]
-                              : l.id == favoritesUpdateCanales[4]
-                              ? favoritesUpdateCanales[4]
-                              : l.id == favoritesUpdateCanales[5]
-                              ? favoritesUpdateCanales[5]
-                              : l.id == favoritesUpdateCanales[6]
-                              ? favoritesUpdateCanales[6]
-                              : l.id == favoritesUpdateCanales[7]
-                              ? favoritesUpdateCanales[7]
-                              : l.id == favoritesUpdateCanales[8]
-                              ? favoritesUpdateCanales[8]
-                              : l.id == favoritesUpdateCanales[9]
-                              ? favoritesUpdateCanales[9]
-                              : l.id == favoritesUpdateCanales[10]
-                              ? favoritesUpdateCanales[10]
-                              : l.id == favoritesUpdateCanales[11]
-                              ? favoritesUpdateCanales[11]
-                              : l.id == favoritesUpdateCanales[12]
-                              ? favoritesUpdateCanales[12]
-                              : l.id == favoritesUpdateCanales[13]
-                              ? favoritesUpdateCanales[13]
-                              : l.id == favoritesUpdateCanales[14]
-                              ? favoritesUpdateCanales[14]
-                              : l.id == favoritesUpdateCanales[15]
-                              ? favoritesUpdateCanales[15]
-                              : l.id == favoritesUpdateCanales[16]
-                              ? favoritesUpdateCanales[16]
-                              : l.id == favoritesUpdateCanales[17]
-                              ? favoritesUpdateCanales[17]
-                              : l.id == favoritesUpdateCanales[18]
-                              ? favoritesUpdateCanales[18]
-                              : l.id == favoritesUpdateCanales[19]
-                              ? favoritesUpdateCanales[19]
-                              : l.id == favoritesUpdateCanales[20]
-                              ? favoritesUpdateCanales[20]
-                              : l.id == favoritesUpdateCanales[21]
-                              ? favoritesUpdateCanales[21]
-                              : l.id == favoritesUpdateCanales[22]
-                              ? favoritesUpdateCanales[22]
-                              : l.id == favoritesUpdateCanales[23]
-                              ? favoritesUpdateCanales[23]
-                              : l.id == favoritesUpdateCanales[24]
-                              ? favoritesUpdateCanales[24]
-                              : l.id == favoritesUpdateCanales[25]
-                              ? favoritesUpdateCanales[25]
-                              : favoritesUpdateCanales[26]
+                                ? favoritesUpdateCanales[1]
+                                : l.id == favoritesUpdateCanales[2]
+                                  ? favoritesUpdateCanales[2]
+                                  : l.id == favoritesUpdateCanales[3]
+                                    ? favoritesUpdateCanales[3]
+                                    : l.id == favoritesUpdateCanales[4]
+                                      ? favoritesUpdateCanales[4]
+                                      : l.id == favoritesUpdateCanales[5]
+                                        ? favoritesUpdateCanales[5]
+                                        : l.id == favoritesUpdateCanales[6]
+                                          ? favoritesUpdateCanales[6]
+                                          : l.id == favoritesUpdateCanales[7]
+                                            ? favoritesUpdateCanales[7]
+                                            : l.id == favoritesUpdateCanales[8]
+                                              ? favoritesUpdateCanales[8]
+                                              : l.id == favoritesUpdateCanales[9]
+                                                ? favoritesUpdateCanales[9]
+                                                : l.id == favoritesUpdateCanales[10]
+                                                  ? favoritesUpdateCanales[10]
+                                                  : l.id == favoritesUpdateCanales[11]
+                                                    ? favoritesUpdateCanales[11]
+                                                    : l.id == favoritesUpdateCanales[12]
+                                                      ? favoritesUpdateCanales[12]
+                                                      : l.id == favoritesUpdateCanales[13]
+                                                        ? favoritesUpdateCanales[13]
+                                                        : l.id == favoritesUpdateCanales[14]
+                                                          ? favoritesUpdateCanales[14]
+                                                          : l.id == favoritesUpdateCanales[15]
+                                                            ? favoritesUpdateCanales[15]
+                                                            : l.id == favoritesUpdateCanales[16]
+                                                              ? favoritesUpdateCanales[16]
+                                                              : l.id == favoritesUpdateCanales[17]
+                                                                ? favoritesUpdateCanales[17]
+                                                                : l.id == favoritesUpdateCanales[18]
+                                                                  ? favoritesUpdateCanales[18]
+                                                                  : l.id == favoritesUpdateCanales[19]
+                                                                    ? favoritesUpdateCanales[19]
+                                                                    : l.id == favoritesUpdateCanales[20]
+                                                                      ? favoritesUpdateCanales[20]
+                                                                      : l.id == favoritesUpdateCanales[21]
+                                                                        ? favoritesUpdateCanales[21]
+                                                                        : l.id == favoritesUpdateCanales[22]
+                                                                          ? favoritesUpdateCanales[22]
+                                                                          : l.id == favoritesUpdateCanales[23]
+                                                                            ? favoritesUpdateCanales[23]
+                                                                            : l.id == favoritesUpdateCanales[24]
+                                                                              ? favoritesUpdateCanales[24]
+                                                                              : l.id == favoritesUpdateCanales[25]
+                                                                                ? favoritesUpdateCanales[25]
+                                                                                : favoritesUpdateCanales[26]
                           )
                         }
                       />
@@ -746,32 +746,32 @@ export default function Library(props) {
           >
             {podcast.map((l, i) =>
               l.id == favoritesUpdatePodcast[0] ||
-              l.id == favoritesUpdatePodcast[1] ||
-              l.id == favoritesUpdatePodcast[2] ||
-              l.id == favoritesUpdatePodcast[3] ||
-              l.id == favoritesUpdatePodcast[4] ||
-              l.id == favoritesUpdatePodcast[5] ||
-              l.id == favoritesUpdatePodcast[6] ||
-              l.id == favoritesUpdatePodcast[7] ||
-              l.id == favoritesUpdatePodcast[8] ||
-              l.id == favoritesUpdatePodcast[9] ||
-              l.id == favoritesUpdatePodcast[10] ||
-              l.id == favoritesUpdatePodcast[11] ||
-              l.id == favoritesUpdatePodcast[12] ||
-              l.id == favoritesUpdatePodcast[13] ||
-              l.id == favoritesUpdatePodcast[14] ||
-              l.id == favoritesUpdatePodcast[15] ||
-              l.id == favoritesUpdatePodcast[16] ||
-              l.id == favoritesUpdatePodcast[17] ||
-              l.id == favoritesUpdatePodcast[18] ||
-              l.id == favoritesUpdatePodcast[19] ||
-              l.id == favoritesUpdatePodcast[20] ||
-              l.id == favoritesUpdatePodcast[21] ||
-              l.id == favoritesUpdatePodcast[22] ||
-              l.id == favoritesUpdatePodcast[23] ||
-              l.id == favoritesUpdatePodcast[24] ||
-              l.id == favoritesUpdatePodcast[25] ||
-              l.id == favoritesUpdatePodcast[26] ? (
+                l.id == favoritesUpdatePodcast[1] ||
+                l.id == favoritesUpdatePodcast[2] ||
+                l.id == favoritesUpdatePodcast[3] ||
+                l.id == favoritesUpdatePodcast[4] ||
+                l.id == favoritesUpdatePodcast[5] ||
+                l.id == favoritesUpdatePodcast[6] ||
+                l.id == favoritesUpdatePodcast[7] ||
+                l.id == favoritesUpdatePodcast[8] ||
+                l.id == favoritesUpdatePodcast[9] ||
+                l.id == favoritesUpdatePodcast[10] ||
+                l.id == favoritesUpdatePodcast[11] ||
+                l.id == favoritesUpdatePodcast[12] ||
+                l.id == favoritesUpdatePodcast[13] ||
+                l.id == favoritesUpdatePodcast[14] ||
+                l.id == favoritesUpdatePodcast[15] ||
+                l.id == favoritesUpdatePodcast[16] ||
+                l.id == favoritesUpdatePodcast[17] ||
+                l.id == favoritesUpdatePodcast[18] ||
+                l.id == favoritesUpdatePodcast[19] ||
+                l.id == favoritesUpdatePodcast[20] ||
+                l.id == favoritesUpdatePodcast[21] ||
+                l.id == favoritesUpdatePodcast[22] ||
+                l.id == favoritesUpdatePodcast[23] ||
+                l.id == favoritesUpdatePodcast[24] ||
+                l.id == favoritesUpdatePodcast[25] ||
+                l.id == favoritesUpdatePodcast[26] ? (
                 <ListItem
                   key={i}
                   containerStyle={{
@@ -788,56 +788,56 @@ export default function Library(props) {
                         l.id == favoritesUpdatePodcast[0]
                           ? favoritesUpdatePodcast[0]
                           : l.id == favoritesUpdatePodcast[1]
-                          ? favoritesUpdatePodcast[1]
-                          : l.id == favoritesUpdatePodcast[2]
-                          ? favoritesUpdatePodcast[2]
-                          : l.id == favoritesUpdatePodcast[3]
-                          ? favoritesUpdatePodcast[3]
-                          : l.id == favoritesUpdatePodcast[4]
-                          ? favoritesUpdatePodcast[4]
-                          : l.id == favoritesUpdatePodcast[5]
-                          ? favoritesUpdatePodcast[5]
-                          : l.id == favoritesUpdatePodcast[6]
-                          ? favoritesUpdatePodcast[6]
-                          : l.id == favoritesUpdatePodcast[7]
-                          ? favoritesUpdatePodcast[7]
-                          : l.id == favoritesUpdatePodcast[8]
-                          ? favoritesUpdatePodcast[8]
-                          : l.id == favoritesUpdatePodcast[9]
-                          ? favoritesUpdatePodcast[9]
-                          : l.id == favoritesUpdatePodcast[10]
-                          ? favoritesUpdatePodcast[10]
-                          : l.id == favoritesUpdatePodcast[11]
-                          ? favoritesUpdatePodcast[11]
-                          : l.id == favoritesUpdatePodcast[12]
-                          ? favoritesUpdatePodcast[12]
-                          : l.id == favoritesUpdatePodcast[13]
-                          ? favoritesUpdatePodcast[13]
-                          : l.id == favoritesUpdatePodcast[14]
-                          ? favoritesUpdatePodcast[14]
-                          : l.id == favoritesUpdatePodcast[15]
-                          ? favoritesUpdatePodcast[15]
-                          : l.id == favoritesUpdatePodcast[16]
-                          ? favoritesUpdatePodcast[16]
-                          : l.id == favoritesUpdatePodcast[17]
-                          ? favoritesUpdatePodcast[17]
-                          : l.id == favoritesUpdatePodcast[18]
-                          ? favoritesUpdatePodcast[18]
-                          : l.id == favoritesUpdatePodcast[19]
-                          ? favoritesUpdatePodcast[19]
-                          : l.id == favoritesUpdatePodcast[20]
-                          ? favoritesUpdatePodcast[20]
-                          : l.id == favoritesUpdatePodcast[21]
-                          ? favoritesUpdatePodcast[21]
-                          : l.id == favoritesUpdatePodcast[22]
-                          ? favoritesUpdatePodcast[22]
-                          : l.id == favoritesUpdatePodcast[23]
-                          ? favoritesUpdatePodcast[23]
-                          : l.id == favoritesUpdatePodcast[24]
-                          ? favoritesUpdatePodcast[24]
-                          : l.id == favoritesUpdatePodcast[25]
-                          ? favoritesUpdatePodcast[25]
-                          : favoritesUpdatePodcast[26],
+                            ? favoritesUpdatePodcast[1]
+                            : l.id == favoritesUpdatePodcast[2]
+                              ? favoritesUpdatePodcast[2]
+                              : l.id == favoritesUpdatePodcast[3]
+                                ? favoritesUpdatePodcast[3]
+                                : l.id == favoritesUpdatePodcast[4]
+                                  ? favoritesUpdatePodcast[4]
+                                  : l.id == favoritesUpdatePodcast[5]
+                                    ? favoritesUpdatePodcast[5]
+                                    : l.id == favoritesUpdatePodcast[6]
+                                      ? favoritesUpdatePodcast[6]
+                                      : l.id == favoritesUpdatePodcast[7]
+                                        ? favoritesUpdatePodcast[7]
+                                        : l.id == favoritesUpdatePodcast[8]
+                                          ? favoritesUpdatePodcast[8]
+                                          : l.id == favoritesUpdatePodcast[9]
+                                            ? favoritesUpdatePodcast[9]
+                                            : l.id == favoritesUpdatePodcast[10]
+                                              ? favoritesUpdatePodcast[10]
+                                              : l.id == favoritesUpdatePodcast[11]
+                                                ? favoritesUpdatePodcast[11]
+                                                : l.id == favoritesUpdatePodcast[12]
+                                                  ? favoritesUpdatePodcast[12]
+                                                  : l.id == favoritesUpdatePodcast[13]
+                                                    ? favoritesUpdatePodcast[13]
+                                                    : l.id == favoritesUpdatePodcast[14]
+                                                      ? favoritesUpdatePodcast[14]
+                                                      : l.id == favoritesUpdatePodcast[15]
+                                                        ? favoritesUpdatePodcast[15]
+                                                        : l.id == favoritesUpdatePodcast[16]
+                                                          ? favoritesUpdatePodcast[16]
+                                                          : l.id == favoritesUpdatePodcast[17]
+                                                            ? favoritesUpdatePodcast[17]
+                                                            : l.id == favoritesUpdatePodcast[18]
+                                                              ? favoritesUpdatePodcast[18]
+                                                              : l.id == favoritesUpdatePodcast[19]
+                                                                ? favoritesUpdatePodcast[19]
+                                                                : l.id == favoritesUpdatePodcast[20]
+                                                                  ? favoritesUpdatePodcast[20]
+                                                                  : l.id == favoritesUpdatePodcast[21]
+                                                                    ? favoritesUpdatePodcast[21]
+                                                                    : l.id == favoritesUpdatePodcast[22]
+                                                                      ? favoritesUpdatePodcast[22]
+                                                                      : l.id == favoritesUpdatePodcast[23]
+                                                                        ? favoritesUpdatePodcast[23]
+                                                                        : l.id == favoritesUpdatePodcast[24]
+                                                                          ? favoritesUpdatePodcast[24]
+                                                                          : l.id == favoritesUpdatePodcast[25]
+                                                                            ? favoritesUpdatePodcast[25]
+                                                                            : favoritesUpdatePodcast[26],
 
                       name: l.title.rendered,
                       image: l.acf.imagen_podcast1,
@@ -856,56 +856,56 @@ export default function Library(props) {
                       l.id == favoritesUpdatePodcast[0]
                         ? favoritesUpdatePodcast[0]
                         : l.id == favoritesUpdatePodcast[1]
-                        ? favoritesUpdatePodcast[1]
-                        : l.id == favoritesUpdatePodcast[2]
-                        ? favoritesUpdatePodcast[2]
-                        : l.id == favoritesUpdatePodcast[3]
-                        ? favoritesUpdatePodcast[3]
-                        : l.id == favoritesUpdatePodcast[4]
-                        ? favoritesUpdatePodcast[4]
-                        : l.id == favoritesUpdatePodcast[5]
-                        ? favoritesUpdatePodcast[5]
-                        : l.id == favoritesUpdatePodcast[6]
-                        ? favoritesUpdatePodcast[6]
-                        : l.id == favoritesUpdatePodcast[7]
-                        ? favoritesUpdatePodcast[7]
-                        : l.id == favoritesUpdatePodcast[8]
-                        ? favoritesUpdatePodcast[8]
-                        : l.id == favoritesUpdatePodcast[9]
-                        ? favoritesUpdatePodcast[9]
-                        : l.id == favoritesUpdatePodcast[10]
-                        ? favoritesUpdatePodcast[10]
-                        : l.id == favoritesUpdatePodcast[11]
-                        ? favoritesUpdatePodcast[11]
-                        : l.id == favoritesUpdatePodcast[12]
-                        ? favoritesUpdatePodcast[12]
-                        : l.id == favoritesUpdatePodcast[13]
-                        ? favoritesUpdatePodcast[13]
-                        : l.id == favoritesUpdatePodcast[14]
-                        ? favoritesUpdatePodcast[14]
-                        : l.id == favoritesUpdatePodcast[15]
-                        ? favoritesUpdatePodcast[15]
-                        : l.id == favoritesUpdatePodcast[16]
-                        ? favoritesUpdatePodcast[16]
-                        : l.id == favoritesUpdatePodcast[17]
-                        ? favoritesUpdatePodcast[17]
-                        : l.id == favoritesUpdatePodcast[18]
-                        ? favoritesUpdatePodcast[18]
-                        : l.id == favoritesUpdatePodcast[19]
-                        ? favoritesUpdatePodcast[19]
-                        : l.id == favoritesUpdatePodcast[20]
-                        ? favoritesUpdatePodcast[20]
-                        : l.id == favoritesUpdatePodcast[21]
-                        ? favoritesUpdatePodcast[21]
-                        : l.id == favoritesUpdatePodcast[22]
-                        ? favoritesUpdatePodcast[22]
-                        : l.id == favoritesUpdatePodcast[23]
-                        ? favoritesUpdatePodcast[23]
-                        : l.id == favoritesUpdatePodcast[24]
-                        ? favoritesUpdatePodcast[24]
-                        : l.id == favoritesUpdatePodcast[25]
-                        ? favoritesUpdatePodcast[25]
-                        : favoritesUpdatePodcast[26]
+                          ? favoritesUpdatePodcast[1]
+                          : l.id == favoritesUpdatePodcast[2]
+                            ? favoritesUpdatePodcast[2]
+                            : l.id == favoritesUpdatePodcast[3]
+                              ? favoritesUpdatePodcast[3]
+                              : l.id == favoritesUpdatePodcast[4]
+                                ? favoritesUpdatePodcast[4]
+                                : l.id == favoritesUpdatePodcast[5]
+                                  ? favoritesUpdatePodcast[5]
+                                  : l.id == favoritesUpdatePodcast[6]
+                                    ? favoritesUpdatePodcast[6]
+                                    : l.id == favoritesUpdatePodcast[7]
+                                      ? favoritesUpdatePodcast[7]
+                                      : l.id == favoritesUpdatePodcast[8]
+                                        ? favoritesUpdatePodcast[8]
+                                        : l.id == favoritesUpdatePodcast[9]
+                                          ? favoritesUpdatePodcast[9]
+                                          : l.id == favoritesUpdatePodcast[10]
+                                            ? favoritesUpdatePodcast[10]
+                                            : l.id == favoritesUpdatePodcast[11]
+                                              ? favoritesUpdatePodcast[11]
+                                              : l.id == favoritesUpdatePodcast[12]
+                                                ? favoritesUpdatePodcast[12]
+                                                : l.id == favoritesUpdatePodcast[13]
+                                                  ? favoritesUpdatePodcast[13]
+                                                  : l.id == favoritesUpdatePodcast[14]
+                                                    ? favoritesUpdatePodcast[14]
+                                                    : l.id == favoritesUpdatePodcast[15]
+                                                      ? favoritesUpdatePodcast[15]
+                                                      : l.id == favoritesUpdatePodcast[16]
+                                                        ? favoritesUpdatePodcast[16]
+                                                        : l.id == favoritesUpdatePodcast[17]
+                                                          ? favoritesUpdatePodcast[17]
+                                                          : l.id == favoritesUpdatePodcast[18]
+                                                            ? favoritesUpdatePodcast[18]
+                                                            : l.id == favoritesUpdatePodcast[19]
+                                                              ? favoritesUpdatePodcast[19]
+                                                              : l.id == favoritesUpdatePodcast[20]
+                                                                ? favoritesUpdatePodcast[20]
+                                                                : l.id == favoritesUpdatePodcast[21]
+                                                                  ? favoritesUpdatePodcast[21]
+                                                                  : l.id == favoritesUpdatePodcast[22]
+                                                                    ? favoritesUpdatePodcast[22]
+                                                                    : l.id == favoritesUpdatePodcast[23]
+                                                                      ? favoritesUpdatePodcast[23]
+                                                                      : l.id == favoritesUpdatePodcast[24]
+                                                                        ? favoritesUpdatePodcast[24]
+                                                                        : l.id == favoritesUpdatePodcast[25]
+                                                                          ? favoritesUpdatePodcast[25]
+                                                                          : favoritesUpdatePodcast[26]
                     )
                   }
                 >
@@ -978,56 +978,56 @@ export default function Library(props) {
                         l.id == favoritesUpdatePodcast[0]
                           ? favoritesUpdatePodcast[0]
                           : l.id == favoritesUpdatePodcast[1]
-                          ? favoritesUpdatePodcast[1]
-                          : l.id == favoritesUpdatePodcast[2]
-                          ? favoritesUpdatePodcast[2]
-                          : l.id == favoritesUpdatePodcast[3]
-                          ? favoritesUpdatePodcast[3]
-                          : l.id == favoritesUpdatePodcast[4]
-                          ? favoritesUpdatePodcast[4]
-                          : l.id == favoritesUpdatePodcast[5]
-                          ? favoritesUpdatePodcast[5]
-                          : l.id == favoritesUpdatePodcast[6]
-                          ? favoritesUpdatePodcast[6]
-                          : l.id == favoritesUpdatePodcast[7]
-                          ? favoritesUpdatePodcast[7]
-                          : l.id == favoritesUpdatePodcast[8]
-                          ? favoritesUpdatePodcast[8]
-                          : l.id == favoritesUpdatePodcast[9]
-                          ? favoritesUpdatePodcast[9]
-                          : l.id == favoritesUpdatePodcast[10]
-                          ? favoritesUpdatePodcast[10]
-                          : l.id == favoritesUpdatePodcast[11]
-                          ? favoritesUpdatePodcast[11]
-                          : l.id == favoritesUpdatePodcast[12]
-                          ? favoritesUpdatePodcast[12]
-                          : l.id == favoritesUpdatePodcast[13]
-                          ? favoritesUpdatePodcast[13]
-                          : l.id == favoritesUpdatePodcast[14]
-                          ? favoritesUpdatePodcast[14]
-                          : l.id == favoritesUpdatePodcast[15]
-                          ? favoritesUpdatePodcast[15]
-                          : l.id == favoritesUpdatePodcast[16]
-                          ? favoritesUpdatePodcast[16]
-                          : l.id == favoritesUpdatePodcast[17]
-                          ? favoritesUpdatePodcast[17]
-                          : l.id == favoritesUpdatePodcast[18]
-                          ? favoritesUpdatePodcast[18]
-                          : l.id == favoritesUpdatePodcast[19]
-                          ? favoritesUpdatePodcast[19]
-                          : l.id == favoritesUpdatePodcast[20]
-                          ? favoritesUpdatePodcast[20]
-                          : l.id == favoritesUpdatePodcast[21]
-                          ? favoritesUpdatePodcast[21]
-                          : l.id == favoritesUpdatePodcast[22]
-                          ? favoritesUpdatePodcast[22]
-                          : l.id == favoritesUpdatePodcast[23]
-                          ? favoritesUpdatePodcast[23]
-                          : l.id == favoritesUpdatePodcast[24]
-                          ? favoritesUpdatePodcast[24]
-                          : l.id == favoritesUpdatePodcast[25]
-                          ? favoritesUpdatePodcast[25]
-                          : favoritesUpdatePodcast[26]
+                            ? favoritesUpdatePodcast[1]
+                            : l.id == favoritesUpdatePodcast[2]
+                              ? favoritesUpdatePodcast[2]
+                              : l.id == favoritesUpdatePodcast[3]
+                                ? favoritesUpdatePodcast[3]
+                                : l.id == favoritesUpdatePodcast[4]
+                                  ? favoritesUpdatePodcast[4]
+                                  : l.id == favoritesUpdatePodcast[5]
+                                    ? favoritesUpdatePodcast[5]
+                                    : l.id == favoritesUpdatePodcast[6]
+                                      ? favoritesUpdatePodcast[6]
+                                      : l.id == favoritesUpdatePodcast[7]
+                                        ? favoritesUpdatePodcast[7]
+                                        : l.id == favoritesUpdatePodcast[8]
+                                          ? favoritesUpdatePodcast[8]
+                                          : l.id == favoritesUpdatePodcast[9]
+                                            ? favoritesUpdatePodcast[9]
+                                            : l.id == favoritesUpdatePodcast[10]
+                                              ? favoritesUpdatePodcast[10]
+                                              : l.id == favoritesUpdatePodcast[11]
+                                                ? favoritesUpdatePodcast[11]
+                                                : l.id == favoritesUpdatePodcast[12]
+                                                  ? favoritesUpdatePodcast[12]
+                                                  : l.id == favoritesUpdatePodcast[13]
+                                                    ? favoritesUpdatePodcast[13]
+                                                    : l.id == favoritesUpdatePodcast[14]
+                                                      ? favoritesUpdatePodcast[14]
+                                                      : l.id == favoritesUpdatePodcast[15]
+                                                        ? favoritesUpdatePodcast[15]
+                                                        : l.id == favoritesUpdatePodcast[16]
+                                                          ? favoritesUpdatePodcast[16]
+                                                          : l.id == favoritesUpdatePodcast[17]
+                                                            ? favoritesUpdatePodcast[17]
+                                                            : l.id == favoritesUpdatePodcast[18]
+                                                              ? favoritesUpdatePodcast[18]
+                                                              : l.id == favoritesUpdatePodcast[19]
+                                                                ? favoritesUpdatePodcast[19]
+                                                                : l.id == favoritesUpdatePodcast[20]
+                                                                  ? favoritesUpdatePodcast[20]
+                                                                  : l.id == favoritesUpdatePodcast[21]
+                                                                    ? favoritesUpdatePodcast[21]
+                                                                    : l.id == favoritesUpdatePodcast[22]
+                                                                      ? favoritesUpdatePodcast[22]
+                                                                      : l.id == favoritesUpdatePodcast[23]
+                                                                        ? favoritesUpdatePodcast[23]
+                                                                        : l.id == favoritesUpdatePodcast[24]
+                                                                          ? favoritesUpdatePodcast[24]
+                                                                          : l.id == favoritesUpdatePodcast[25]
+                                                                            ? favoritesUpdatePodcast[25]
+                                                                            : favoritesUpdatePodcast[26]
                       )
                     }
                   />

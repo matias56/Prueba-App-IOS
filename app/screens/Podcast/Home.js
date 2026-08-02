@@ -188,7 +188,7 @@ export default function Home(props) {
           setLikeUpdatePodcast(initialState.likes);
         })
 
-        .then(function () {});
+        .then(function () { });
     }
   };
 
@@ -222,7 +222,7 @@ export default function Home(props) {
           setLikeUpdatePodcast(initialState.likes);
         })
 
-        .then(function () {});
+        .then(function () { });
     }
   };
 
@@ -475,7 +475,7 @@ export default function Home(props) {
           });
         })
 
-        .then(function () {});
+        .then(function () { });
     }
   };
 
@@ -512,7 +512,7 @@ export default function Home(props) {
           });
         })
 
-        .then(function () {});
+        .then(function () { });
     }
   };
 
@@ -670,7 +670,7 @@ export default function Home(props) {
   return (
     <ScrollView style={styles.container}>
       <Image
-        source={require("../../../assets/img/logo-aginewsfm4.png")}
+        source={require("./assets/img/Logo.png")}
         resizeMode="contain"
         style={styles.image}
       />
@@ -954,106 +954,106 @@ export default function Home(props) {
                       />
 
                       {item.id == likeUpdatePodcast[0] ||
-                      item.id == likeUpdatePodcast[1] ||
-                      item.id == likeUpdatePodcast[2] ||
-                      item.id == likeUpdatePodcast[3] ||
-                      item.id == likeUpdatePodcast[4] ||
-                      item.id == likeUpdatePodcast[5] ||
-                      item.id == likeUpdatePodcast[6] ||
-                      item.id == likeUpdatePodcast[7] ||
-                      item.id == likeUpdatePodcast[8] ||
-                      item.id == likeUpdatePodcast[9] ||
-                      item.id == likeUpdatePodcast[10] ||
-                      item.id == likeUpdatePodcast[11] ||
-                      item.id == likeUpdatePodcast[12] ||
-                      item.id == likeUpdatePodcast[13] ||
-                      item.id == likeUpdatePodcast[14] ||
-                      item.id == likeUpdatePodcast[15] ||
-                      item.id == likeUpdatePodcast[16] ||
-                      item.id == likeUpdatePodcast[17] ||
-                      item.id == likeUpdatePodcast[18] ||
-                      item.id == likeUpdatePodcast[19] ||
-                      item.id == likeUpdatePodcast[20] ||
-                      item.id == likeUpdatePodcast[21] ||
-                      item.id == likeUpdatePodcast[22] ||
-                      item.id == likeUpdatePodcast[23] ||
-                      item.id == likeUpdatePodcast[24] ||
-                      item.id == likeUpdatePodcast[25] ||
-                      item.id == likeUpdatePodcast[26] ||
-                      item.id == likeUpdatePodcast[27] ||
-                      item.id == likeUpdatePodcast[28] ||
-                      item.id == likeUpdatePodcast[29] ||
-                      item.id == likeUpdatePodcast[30] ||
-                      item.id == likeUpdatePodcast[31] ||
-                      item.id == likeUpdatePodcast[32] ||
-                      item.id == likeUpdatePodcast[33] ||
-                      item.id == likeUpdatePodcast[34] ||
-                      item.id == likeUpdatePodcast[35] ||
-                      item.id == likeUpdatePodcast[36] ||
-                      item.id == likeUpdatePodcast[37] ||
-                      item.id == likeUpdatePodcast[38] ||
-                      item.id == likeUpdatePodcast[39] ||
-                      item.id == likeUpdatePodcast[40] ||
-                      item.id == likeUpdatePodcast[41] ||
-                      item.id == likeUpdatePodcast[42] ||
-                      item.id == likeUpdatePodcast[43] ||
-                      item.id == likeUpdatePodcast[44] ||
-                      item.id == likeUpdatePodcast[45] ||
-                      item.id == likeUpdatePodcast[46] ||
-                      item.id == likeUpdatePodcast[47] ||
-                      item.id == likeUpdatePodcast[48] ||
-                      item.id == likeUpdatePodcast[49] ||
-                      item.id == likeUpdatePodcast[50] ||
-                      item.id == likeUpdatePodcast[51] ||
-                      item.id == likeUpdatePodcast[52] ||
-                      item.id == likeUpdatePodcast[53] ||
-                      item.id == likeUpdatePodcast[54] ||
-                      item.id == likeUpdatePodcast[55] ||
-                      item.id == likeUpdatePodcast[56] ||
-                      item.id == likeUpdatePodcast[57] ||
-                      item.id == likeUpdatePodcast[58] ||
-                      item.id == likeUpdatePodcast[59] ||
-                      item.id == likeUpdatePodcast[60] ||
-                      item.id == likeUpdatePodcast[61] ||
-                      item.id == likeUpdatePodcast[62] ||
-                      item.id == likeUpdatePodcast[63] ||
-                      item.id == likeUpdatePodcast[64] ||
-                      item.id == likeUpdatePodcast[65] ||
-                      item.id == likeUpdatePodcast[66] ||
-                      item.id == likeUpdatePodcast[67] ||
-                      item.id == likeUpdatePodcast[68] ||
-                      item.id == likeUpdatePodcast[69] ||
-                      item.id == likeUpdatePodcast[70] ||
-                      item.id == likeUpdatePodcast[71] ||
-                      item.id == likeUpdatePodcast[72] ||
-                      item.id == likeUpdatePodcast[73] ||
-                      item.id == likeUpdatePodcast[74] ||
-                      item.id == likeUpdatePodcast[75] ||
-                      item.id == likeUpdatePodcast[76] ||
-                      item.id == likeUpdatePodcast[77] ||
-                      item.id == likeUpdatePodcast[78] ||
-                      item.id == likeUpdatePodcast[79] ||
-                      item.id == likeUpdatePodcast[80] ||
-                      item.id == likeUpdatePodcast[81] ||
-                      item.id == likeUpdatePodcast[82] ||
-                      item.id == likeUpdatePodcast[83] ||
-                      item.id == likeUpdatePodcast[84] ||
-                      item.id == likeUpdatePodcast[85] ||
-                      item.id == likeUpdatePodcast[86] ||
-                      item.id == likeUpdatePodcast[87] ||
-                      item.id == likeUpdatePodcast[88] ||
-                      item.id == likeUpdatePodcast[89] ||
-                      item.id == likeUpdatePodcast[90] ||
-                      item.id == likeUpdatePodcast[91] ||
-                      item.id == likeUpdatePodcast[92] ||
-                      item.id == likeUpdatePodcast[93] ||
-                      item.id == likeUpdatePodcast[94] ||
-                      item.id == likeUpdatePodcast[95] ||
-                      item.id == likeUpdatePodcast[96] ||
-                      item.id == likeUpdatePodcast[97] ||
-                      item.id == likeUpdatePodcast[98] ||
-                      item.id == likeUpdatePodcast[99] ||
-                      item.id == likeUpdatePodcast[100] ? (
+                        item.id == likeUpdatePodcast[1] ||
+                        item.id == likeUpdatePodcast[2] ||
+                        item.id == likeUpdatePodcast[3] ||
+                        item.id == likeUpdatePodcast[4] ||
+                        item.id == likeUpdatePodcast[5] ||
+                        item.id == likeUpdatePodcast[6] ||
+                        item.id == likeUpdatePodcast[7] ||
+                        item.id == likeUpdatePodcast[8] ||
+                        item.id == likeUpdatePodcast[9] ||
+                        item.id == likeUpdatePodcast[10] ||
+                        item.id == likeUpdatePodcast[11] ||
+                        item.id == likeUpdatePodcast[12] ||
+                        item.id == likeUpdatePodcast[13] ||
+                        item.id == likeUpdatePodcast[14] ||
+                        item.id == likeUpdatePodcast[15] ||
+                        item.id == likeUpdatePodcast[16] ||
+                        item.id == likeUpdatePodcast[17] ||
+                        item.id == likeUpdatePodcast[18] ||
+                        item.id == likeUpdatePodcast[19] ||
+                        item.id == likeUpdatePodcast[20] ||
+                        item.id == likeUpdatePodcast[21] ||
+                        item.id == likeUpdatePodcast[22] ||
+                        item.id == likeUpdatePodcast[23] ||
+                        item.id == likeUpdatePodcast[24] ||
+                        item.id == likeUpdatePodcast[25] ||
+                        item.id == likeUpdatePodcast[26] ||
+                        item.id == likeUpdatePodcast[27] ||
+                        item.id == likeUpdatePodcast[28] ||
+                        item.id == likeUpdatePodcast[29] ||
+                        item.id == likeUpdatePodcast[30] ||
+                        item.id == likeUpdatePodcast[31] ||
+                        item.id == likeUpdatePodcast[32] ||
+                        item.id == likeUpdatePodcast[33] ||
+                        item.id == likeUpdatePodcast[34] ||
+                        item.id == likeUpdatePodcast[35] ||
+                        item.id == likeUpdatePodcast[36] ||
+                        item.id == likeUpdatePodcast[37] ||
+                        item.id == likeUpdatePodcast[38] ||
+                        item.id == likeUpdatePodcast[39] ||
+                        item.id == likeUpdatePodcast[40] ||
+                        item.id == likeUpdatePodcast[41] ||
+                        item.id == likeUpdatePodcast[42] ||
+                        item.id == likeUpdatePodcast[43] ||
+                        item.id == likeUpdatePodcast[44] ||
+                        item.id == likeUpdatePodcast[45] ||
+                        item.id == likeUpdatePodcast[46] ||
+                        item.id == likeUpdatePodcast[47] ||
+                        item.id == likeUpdatePodcast[48] ||
+                        item.id == likeUpdatePodcast[49] ||
+                        item.id == likeUpdatePodcast[50] ||
+                        item.id == likeUpdatePodcast[51] ||
+                        item.id == likeUpdatePodcast[52] ||
+                        item.id == likeUpdatePodcast[53] ||
+                        item.id == likeUpdatePodcast[54] ||
+                        item.id == likeUpdatePodcast[55] ||
+                        item.id == likeUpdatePodcast[56] ||
+                        item.id == likeUpdatePodcast[57] ||
+                        item.id == likeUpdatePodcast[58] ||
+                        item.id == likeUpdatePodcast[59] ||
+                        item.id == likeUpdatePodcast[60] ||
+                        item.id == likeUpdatePodcast[61] ||
+                        item.id == likeUpdatePodcast[62] ||
+                        item.id == likeUpdatePodcast[63] ||
+                        item.id == likeUpdatePodcast[64] ||
+                        item.id == likeUpdatePodcast[65] ||
+                        item.id == likeUpdatePodcast[66] ||
+                        item.id == likeUpdatePodcast[67] ||
+                        item.id == likeUpdatePodcast[68] ||
+                        item.id == likeUpdatePodcast[69] ||
+                        item.id == likeUpdatePodcast[70] ||
+                        item.id == likeUpdatePodcast[71] ||
+                        item.id == likeUpdatePodcast[72] ||
+                        item.id == likeUpdatePodcast[73] ||
+                        item.id == likeUpdatePodcast[74] ||
+                        item.id == likeUpdatePodcast[75] ||
+                        item.id == likeUpdatePodcast[76] ||
+                        item.id == likeUpdatePodcast[77] ||
+                        item.id == likeUpdatePodcast[78] ||
+                        item.id == likeUpdatePodcast[79] ||
+                        item.id == likeUpdatePodcast[80] ||
+                        item.id == likeUpdatePodcast[81] ||
+                        item.id == likeUpdatePodcast[82] ||
+                        item.id == likeUpdatePodcast[83] ||
+                        item.id == likeUpdatePodcast[84] ||
+                        item.id == likeUpdatePodcast[85] ||
+                        item.id == likeUpdatePodcast[86] ||
+                        item.id == likeUpdatePodcast[87] ||
+                        item.id == likeUpdatePodcast[88] ||
+                        item.id == likeUpdatePodcast[89] ||
+                        item.id == likeUpdatePodcast[90] ||
+                        item.id == likeUpdatePodcast[91] ||
+                        item.id == likeUpdatePodcast[92] ||
+                        item.id == likeUpdatePodcast[93] ||
+                        item.id == likeUpdatePodcast[94] ||
+                        item.id == likeUpdatePodcast[95] ||
+                        item.id == likeUpdatePodcast[96] ||
+                        item.id == likeUpdatePodcast[97] ||
+                        item.id == likeUpdatePodcast[98] ||
+                        item.id == likeUpdatePodcast[99] ||
+                        item.id == likeUpdatePodcast[100] ? (
                         <View style={{ flexDirection: "row" }}>
                           <Icon
                             type="fontisto"
@@ -1077,10 +1077,9 @@ export default function Home(props) {
                           >
                             {
                               //mostrarViews(item.id)
-                              `${
-                                obtenTotalFavoritos(item.id) == undefined
-                                  ? 1
-                                  : parseInt(obtenTotalFavoritos(item.id)) + 1
+                              `${obtenTotalFavoritos(item.id) == undefined
+                                ? 1
+                                : parseInt(obtenTotalFavoritos(item.id)) + 1
                               }`
                             }
                           </Text>
@@ -1094,10 +1093,9 @@ export default function Home(props) {
                             >
                               {
                                 //mostrarViews(item.id)
-                                `${
-                                  obtenTotalFavoritos(item.id) == undefined
-                                    ? ""
-                                    : parseInt(obtenTotalFavoritos(item.id)) + 1
+                                `${obtenTotalFavoritos(item.id) == undefined
+                                  ? ""
+                                  : parseInt(obtenTotalFavoritos(item.id)) + 1
                                 }`
                               }
                             </Text>
@@ -1309,32 +1307,32 @@ export default function Home(props) {
               </View>
               <View style={{ margin: 10 }}>
                 {item.id == favoritesUpdatePodcast[0] ||
-                item.id == favoritesUpdatePodcast[1] ||
-                item.id == favoritesUpdatePodcast[2] ||
-                item.id == favoritesUpdatePodcast[3] ||
-                item.id == favoritesUpdatePodcast[4] ||
-                item.id == favoritesUpdatePodcast[5] ||
-                item.id == favoritesUpdatePodcast[6] ||
-                item.id == favoritesUpdatePodcast[7] ||
-                item.id == favoritesUpdatePodcast[8] ||
-                item.id == favoritesUpdatePodcast[9] ||
-                item.id == favoritesUpdatePodcast[10] ||
-                item.id == favoritesUpdatePodcast[11] ||
-                item.id == favoritesUpdatePodcast[12] ||
-                item.id == favoritesUpdatePodcast[13] ||
-                item.id == favoritesUpdatePodcast[14] ||
-                item.id == favoritesUpdatePodcast[15] ||
-                item.id == favoritesUpdatePodcast[16] ||
-                item.id == favoritesUpdatePodcast[17] ||
-                item.id == favoritesUpdatePodcast[18] ||
-                item.id == favoritesUpdatePodcast[19] ||
-                item.id == favoritesUpdatePodcast[20] ||
-                item.id == favoritesUpdatePodcast[21] ||
-                item.id == favoritesUpdatePodcast[22] ||
-                item.id == favoritesUpdatePodcast[23] ||
-                item.id == favoritesUpdatePodcast[24] ||
-                item.id == favoritesUpdatePodcast[25] ||
-                item.id == favoritesUpdatePodcast[26] ? (
+                  item.id == favoritesUpdatePodcast[1] ||
+                  item.id == favoritesUpdatePodcast[2] ||
+                  item.id == favoritesUpdatePodcast[3] ||
+                  item.id == favoritesUpdatePodcast[4] ||
+                  item.id == favoritesUpdatePodcast[5] ||
+                  item.id == favoritesUpdatePodcast[6] ||
+                  item.id == favoritesUpdatePodcast[7] ||
+                  item.id == favoritesUpdatePodcast[8] ||
+                  item.id == favoritesUpdatePodcast[9] ||
+                  item.id == favoritesUpdatePodcast[10] ||
+                  item.id == favoritesUpdatePodcast[11] ||
+                  item.id == favoritesUpdatePodcast[12] ||
+                  item.id == favoritesUpdatePodcast[13] ||
+                  item.id == favoritesUpdatePodcast[14] ||
+                  item.id == favoritesUpdatePodcast[15] ||
+                  item.id == favoritesUpdatePodcast[16] ||
+                  item.id == favoritesUpdatePodcast[17] ||
+                  item.id == favoritesUpdatePodcast[18] ||
+                  item.id == favoritesUpdatePodcast[19] ||
+                  item.id == favoritesUpdatePodcast[20] ||
+                  item.id == favoritesUpdatePodcast[21] ||
+                  item.id == favoritesUpdatePodcast[22] ||
+                  item.id == favoritesUpdatePodcast[23] ||
+                  item.id == favoritesUpdatePodcast[24] ||
+                  item.id == favoritesUpdatePodcast[25] ||
+                  item.id == favoritesUpdatePodcast[26] ? (
                   <Button
                     icon={{
                       name: "playlist-play",
@@ -1524,106 +1522,106 @@ export default function Home(props) {
                         />
 
                         {item.id == likeUpdatePodcast[0] ||
-                        item.id == likeUpdatePodcast[1] ||
-                        item.id == likeUpdatePodcast[2] ||
-                        item.id == likeUpdatePodcast[3] ||
-                        item.id == likeUpdatePodcast[4] ||
-                        item.id == likeUpdatePodcast[5] ||
-                        item.id == likeUpdatePodcast[6] ||
-                        item.id == likeUpdatePodcast[7] ||
-                        item.id == likeUpdatePodcast[8] ||
-                        item.id == likeUpdatePodcast[9] ||
-                        item.id == likeUpdatePodcast[10] ||
-                        item.id == likeUpdatePodcast[11] ||
-                        item.id == likeUpdatePodcast[12] ||
-                        item.id == likeUpdatePodcast[13] ||
-                        item.id == likeUpdatePodcast[14] ||
-                        item.id == likeUpdatePodcast[15] ||
-                        item.id == likeUpdatePodcast[16] ||
-                        item.id == likeUpdatePodcast[17] ||
-                        item.id == likeUpdatePodcast[18] ||
-                        item.id == likeUpdatePodcast[19] ||
-                        item.id == likeUpdatePodcast[20] ||
-                        item.id == likeUpdatePodcast[21] ||
-                        item.id == likeUpdatePodcast[22] ||
-                        item.id == likeUpdatePodcast[23] ||
-                        item.id == likeUpdatePodcast[24] ||
-                        item.id == likeUpdatePodcast[25] ||
-                        item.id == likeUpdatePodcast[26] ||
-                        item.id == likeUpdatePodcast[27] ||
-                        item.id == likeUpdatePodcast[28] ||
-                        item.id == likeUpdatePodcast[29] ||
-                        item.id == likeUpdatePodcast[30] ||
-                        item.id == likeUpdatePodcast[31] ||
-                        item.id == likeUpdatePodcast[32] ||
-                        item.id == likeUpdatePodcast[33] ||
-                        item.id == likeUpdatePodcast[34] ||
-                        item.id == likeUpdatePodcast[35] ||
-                        item.id == likeUpdatePodcast[36] ||
-                        item.id == likeUpdatePodcast[37] ||
-                        item.id == likeUpdatePodcast[38] ||
-                        item.id == likeUpdatePodcast[39] ||
-                        item.id == likeUpdatePodcast[40] ||
-                        item.id == likeUpdatePodcast[41] ||
-                        item.id == likeUpdatePodcast[42] ||
-                        item.id == likeUpdatePodcast[43] ||
-                        item.id == likeUpdatePodcast[44] ||
-                        item.id == likeUpdatePodcast[45] ||
-                        item.id == likeUpdatePodcast[46] ||
-                        item.id == likeUpdatePodcast[47] ||
-                        item.id == likeUpdatePodcast[48] ||
-                        item.id == likeUpdatePodcast[49] ||
-                        item.id == likeUpdatePodcast[50] ||
-                        item.id == likeUpdatePodcast[51] ||
-                        item.id == likeUpdatePodcast[52] ||
-                        item.id == likeUpdatePodcast[53] ||
-                        item.id == likeUpdatePodcast[54] ||
-                        item.id == likeUpdatePodcast[55] ||
-                        item.id == likeUpdatePodcast[56] ||
-                        item.id == likeUpdatePodcast[57] ||
-                        item.id == likeUpdatePodcast[58] ||
-                        item.id == likeUpdatePodcast[59] ||
-                        item.id == likeUpdatePodcast[60] ||
-                        item.id == likeUpdatePodcast[61] ||
-                        item.id == likeUpdatePodcast[62] ||
-                        item.id == likeUpdatePodcast[63] ||
-                        item.id == likeUpdatePodcast[64] ||
-                        item.id == likeUpdatePodcast[65] ||
-                        item.id == likeUpdatePodcast[66] ||
-                        item.id == likeUpdatePodcast[67] ||
-                        item.id == likeUpdatePodcast[68] ||
-                        item.id == likeUpdatePodcast[69] ||
-                        item.id == likeUpdatePodcast[70] ||
-                        item.id == likeUpdatePodcast[71] ||
-                        item.id == likeUpdatePodcast[72] ||
-                        item.id == likeUpdatePodcast[73] ||
-                        item.id == likeUpdatePodcast[74] ||
-                        item.id == likeUpdatePodcast[75] ||
-                        item.id == likeUpdatePodcast[76] ||
-                        item.id == likeUpdatePodcast[77] ||
-                        item.id == likeUpdatePodcast[78] ||
-                        item.id == likeUpdatePodcast[79] ||
-                        item.id == likeUpdatePodcast[80] ||
-                        item.id == likeUpdatePodcast[81] ||
-                        item.id == likeUpdatePodcast[82] ||
-                        item.id == likeUpdatePodcast[83] ||
-                        item.id == likeUpdatePodcast[84] ||
-                        item.id == likeUpdatePodcast[85] ||
-                        item.id == likeUpdatePodcast[86] ||
-                        item.id == likeUpdatePodcast[87] ||
-                        item.id == likeUpdatePodcast[88] ||
-                        item.id == likeUpdatePodcast[89] ||
-                        item.id == likeUpdatePodcast[90] ||
-                        item.id == likeUpdatePodcast[91] ||
-                        item.id == likeUpdatePodcast[92] ||
-                        item.id == likeUpdatePodcast[93] ||
-                        item.id == likeUpdatePodcast[94] ||
-                        item.id == likeUpdatePodcast[95] ||
-                        item.id == likeUpdatePodcast[96] ||
-                        item.id == likeUpdatePodcast[97] ||
-                        item.id == likeUpdatePodcast[98] ||
-                        item.id == likeUpdatePodcast[99] ||
-                        item.id == likeUpdatePodcast[100] ? (
+                          item.id == likeUpdatePodcast[1] ||
+                          item.id == likeUpdatePodcast[2] ||
+                          item.id == likeUpdatePodcast[3] ||
+                          item.id == likeUpdatePodcast[4] ||
+                          item.id == likeUpdatePodcast[5] ||
+                          item.id == likeUpdatePodcast[6] ||
+                          item.id == likeUpdatePodcast[7] ||
+                          item.id == likeUpdatePodcast[8] ||
+                          item.id == likeUpdatePodcast[9] ||
+                          item.id == likeUpdatePodcast[10] ||
+                          item.id == likeUpdatePodcast[11] ||
+                          item.id == likeUpdatePodcast[12] ||
+                          item.id == likeUpdatePodcast[13] ||
+                          item.id == likeUpdatePodcast[14] ||
+                          item.id == likeUpdatePodcast[15] ||
+                          item.id == likeUpdatePodcast[16] ||
+                          item.id == likeUpdatePodcast[17] ||
+                          item.id == likeUpdatePodcast[18] ||
+                          item.id == likeUpdatePodcast[19] ||
+                          item.id == likeUpdatePodcast[20] ||
+                          item.id == likeUpdatePodcast[21] ||
+                          item.id == likeUpdatePodcast[22] ||
+                          item.id == likeUpdatePodcast[23] ||
+                          item.id == likeUpdatePodcast[24] ||
+                          item.id == likeUpdatePodcast[25] ||
+                          item.id == likeUpdatePodcast[26] ||
+                          item.id == likeUpdatePodcast[27] ||
+                          item.id == likeUpdatePodcast[28] ||
+                          item.id == likeUpdatePodcast[29] ||
+                          item.id == likeUpdatePodcast[30] ||
+                          item.id == likeUpdatePodcast[31] ||
+                          item.id == likeUpdatePodcast[32] ||
+                          item.id == likeUpdatePodcast[33] ||
+                          item.id == likeUpdatePodcast[34] ||
+                          item.id == likeUpdatePodcast[35] ||
+                          item.id == likeUpdatePodcast[36] ||
+                          item.id == likeUpdatePodcast[37] ||
+                          item.id == likeUpdatePodcast[38] ||
+                          item.id == likeUpdatePodcast[39] ||
+                          item.id == likeUpdatePodcast[40] ||
+                          item.id == likeUpdatePodcast[41] ||
+                          item.id == likeUpdatePodcast[42] ||
+                          item.id == likeUpdatePodcast[43] ||
+                          item.id == likeUpdatePodcast[44] ||
+                          item.id == likeUpdatePodcast[45] ||
+                          item.id == likeUpdatePodcast[46] ||
+                          item.id == likeUpdatePodcast[47] ||
+                          item.id == likeUpdatePodcast[48] ||
+                          item.id == likeUpdatePodcast[49] ||
+                          item.id == likeUpdatePodcast[50] ||
+                          item.id == likeUpdatePodcast[51] ||
+                          item.id == likeUpdatePodcast[52] ||
+                          item.id == likeUpdatePodcast[53] ||
+                          item.id == likeUpdatePodcast[54] ||
+                          item.id == likeUpdatePodcast[55] ||
+                          item.id == likeUpdatePodcast[56] ||
+                          item.id == likeUpdatePodcast[57] ||
+                          item.id == likeUpdatePodcast[58] ||
+                          item.id == likeUpdatePodcast[59] ||
+                          item.id == likeUpdatePodcast[60] ||
+                          item.id == likeUpdatePodcast[61] ||
+                          item.id == likeUpdatePodcast[62] ||
+                          item.id == likeUpdatePodcast[63] ||
+                          item.id == likeUpdatePodcast[64] ||
+                          item.id == likeUpdatePodcast[65] ||
+                          item.id == likeUpdatePodcast[66] ||
+                          item.id == likeUpdatePodcast[67] ||
+                          item.id == likeUpdatePodcast[68] ||
+                          item.id == likeUpdatePodcast[69] ||
+                          item.id == likeUpdatePodcast[70] ||
+                          item.id == likeUpdatePodcast[71] ||
+                          item.id == likeUpdatePodcast[72] ||
+                          item.id == likeUpdatePodcast[73] ||
+                          item.id == likeUpdatePodcast[74] ||
+                          item.id == likeUpdatePodcast[75] ||
+                          item.id == likeUpdatePodcast[76] ||
+                          item.id == likeUpdatePodcast[77] ||
+                          item.id == likeUpdatePodcast[78] ||
+                          item.id == likeUpdatePodcast[79] ||
+                          item.id == likeUpdatePodcast[80] ||
+                          item.id == likeUpdatePodcast[81] ||
+                          item.id == likeUpdatePodcast[82] ||
+                          item.id == likeUpdatePodcast[83] ||
+                          item.id == likeUpdatePodcast[84] ||
+                          item.id == likeUpdatePodcast[85] ||
+                          item.id == likeUpdatePodcast[86] ||
+                          item.id == likeUpdatePodcast[87] ||
+                          item.id == likeUpdatePodcast[88] ||
+                          item.id == likeUpdatePodcast[89] ||
+                          item.id == likeUpdatePodcast[90] ||
+                          item.id == likeUpdatePodcast[91] ||
+                          item.id == likeUpdatePodcast[92] ||
+                          item.id == likeUpdatePodcast[93] ||
+                          item.id == likeUpdatePodcast[94] ||
+                          item.id == likeUpdatePodcast[95] ||
+                          item.id == likeUpdatePodcast[96] ||
+                          item.id == likeUpdatePodcast[97] ||
+                          item.id == likeUpdatePodcast[98] ||
+                          item.id == likeUpdatePodcast[99] ||
+                          item.id == likeUpdatePodcast[100] ? (
                           <View style={{ flexDirection: "row" }}>
                             <Icon
                               type="fontisto"
@@ -1647,10 +1645,9 @@ export default function Home(props) {
                             >
                               {
                                 //mostrarViews(item.id)
-                                `${
-                                  obtenTotalFavoritos(item.id) == undefined
-                                    ? 1
-                                    : parseInt(obtenTotalFavoritos(item.id)) + 1
+                                `${obtenTotalFavoritos(item.id) == undefined
+                                  ? 1
+                                  : parseInt(obtenTotalFavoritos(item.id)) + 1
                                 }`
                               }
                             </Text>
@@ -1664,11 +1661,10 @@ export default function Home(props) {
                               >
                                 {
                                   //mostrarViews(item.id)
-                                  `${
-                                    obtenTotalFavoritos(item.id) == undefined
-                                      ? ""
-                                      : parseInt(obtenTotalFavoritos(item.id)) +
-                                        1
+                                  `${obtenTotalFavoritos(item.id) == undefined
+                                    ? ""
+                                    : parseInt(obtenTotalFavoritos(item.id)) +
+                                    1
                                   }`
                                 }
                               </Text>
@@ -1880,32 +1876,32 @@ export default function Home(props) {
                 </View>
                 <View style={{ margin: 10 }}>
                   {item.id == favoritesUpdatePodcast[0] ||
-                  item.id == favoritesUpdatePodcast[1] ||
-                  item.id == favoritesUpdatePodcast[2] ||
-                  item.id == favoritesUpdatePodcast[3] ||
-                  item.id == favoritesUpdatePodcast[4] ||
-                  item.id == favoritesUpdatePodcast[5] ||
-                  item.id == favoritesUpdatePodcast[6] ||
-                  item.id == favoritesUpdatePodcast[7] ||
-                  item.id == favoritesUpdatePodcast[8] ||
-                  item.id == favoritesUpdatePodcast[9] ||
-                  item.id == favoritesUpdatePodcast[10] ||
-                  item.id == favoritesUpdatePodcast[11] ||
-                  item.id == favoritesUpdatePodcast[12] ||
-                  item.id == favoritesUpdatePodcast[13] ||
-                  item.id == favoritesUpdatePodcast[14] ||
-                  item.id == favoritesUpdatePodcast[15] ||
-                  item.id == favoritesUpdatePodcast[16] ||
-                  item.id == favoritesUpdatePodcast[17] ||
-                  item.id == favoritesUpdatePodcast[18] ||
-                  item.id == favoritesUpdatePodcast[19] ||
-                  item.id == favoritesUpdatePodcast[20] ||
-                  item.id == favoritesUpdatePodcast[21] ||
-                  item.id == favoritesUpdatePodcast[22] ||
-                  item.id == favoritesUpdatePodcast[23] ||
-                  item.id == favoritesUpdatePodcast[24] ||
-                  item.id == favoritesUpdatePodcast[25] ||
-                  item.id == favoritesUpdatePodcast[26] ? (
+                    item.id == favoritesUpdatePodcast[1] ||
+                    item.id == favoritesUpdatePodcast[2] ||
+                    item.id == favoritesUpdatePodcast[3] ||
+                    item.id == favoritesUpdatePodcast[4] ||
+                    item.id == favoritesUpdatePodcast[5] ||
+                    item.id == favoritesUpdatePodcast[6] ||
+                    item.id == favoritesUpdatePodcast[7] ||
+                    item.id == favoritesUpdatePodcast[8] ||
+                    item.id == favoritesUpdatePodcast[9] ||
+                    item.id == favoritesUpdatePodcast[10] ||
+                    item.id == favoritesUpdatePodcast[11] ||
+                    item.id == favoritesUpdatePodcast[12] ||
+                    item.id == favoritesUpdatePodcast[13] ||
+                    item.id == favoritesUpdatePodcast[14] ||
+                    item.id == favoritesUpdatePodcast[15] ||
+                    item.id == favoritesUpdatePodcast[16] ||
+                    item.id == favoritesUpdatePodcast[17] ||
+                    item.id == favoritesUpdatePodcast[18] ||
+                    item.id == favoritesUpdatePodcast[19] ||
+                    item.id == favoritesUpdatePodcast[20] ||
+                    item.id == favoritesUpdatePodcast[21] ||
+                    item.id == favoritesUpdatePodcast[22] ||
+                    item.id == favoritesUpdatePodcast[23] ||
+                    item.id == favoritesUpdatePodcast[24] ||
+                    item.id == favoritesUpdatePodcast[25] ||
+                    item.id == favoritesUpdatePodcast[26] ? (
                     <Button
                       icon={{
                         name: "playlist-play",
@@ -2087,106 +2083,106 @@ export default function Home(props) {
                         />
 
                         {item.id == likeUpdatePodcast[0] ||
-                        item.id == likeUpdatePodcast[1] ||
-                        item.id == likeUpdatePodcast[2] ||
-                        item.id == likeUpdatePodcast[3] ||
-                        item.id == likeUpdatePodcast[4] ||
-                        item.id == likeUpdatePodcast[5] ||
-                        item.id == likeUpdatePodcast[6] ||
-                        item.id == likeUpdatePodcast[7] ||
-                        item.id == likeUpdatePodcast[8] ||
-                        item.id == likeUpdatePodcast[9] ||
-                        item.id == likeUpdatePodcast[10] ||
-                        item.id == likeUpdatePodcast[11] ||
-                        item.id == likeUpdatePodcast[12] ||
-                        item.id == likeUpdatePodcast[13] ||
-                        item.id == likeUpdatePodcast[14] ||
-                        item.id == likeUpdatePodcast[15] ||
-                        item.id == likeUpdatePodcast[16] ||
-                        item.id == likeUpdatePodcast[17] ||
-                        item.id == likeUpdatePodcast[18] ||
-                        item.id == likeUpdatePodcast[19] ||
-                        item.id == likeUpdatePodcast[20] ||
-                        item.id == likeUpdatePodcast[21] ||
-                        item.id == likeUpdatePodcast[22] ||
-                        item.id == likeUpdatePodcast[23] ||
-                        item.id == likeUpdatePodcast[24] ||
-                        item.id == likeUpdatePodcast[25] ||
-                        item.id == likeUpdatePodcast[26] ||
-                        item.id == likeUpdatePodcast[27] ||
-                        item.id == likeUpdatePodcast[28] ||
-                        item.id == likeUpdatePodcast[29] ||
-                        item.id == likeUpdatePodcast[30] ||
-                        item.id == likeUpdatePodcast[31] ||
-                        item.id == likeUpdatePodcast[32] ||
-                        item.id == likeUpdatePodcast[33] ||
-                        item.id == likeUpdatePodcast[34] ||
-                        item.id == likeUpdatePodcast[35] ||
-                        item.id == likeUpdatePodcast[36] ||
-                        item.id == likeUpdatePodcast[37] ||
-                        item.id == likeUpdatePodcast[38] ||
-                        item.id == likeUpdatePodcast[39] ||
-                        item.id == likeUpdatePodcast[40] ||
-                        item.id == likeUpdatePodcast[41] ||
-                        item.id == likeUpdatePodcast[42] ||
-                        item.id == likeUpdatePodcast[43] ||
-                        item.id == likeUpdatePodcast[44] ||
-                        item.id == likeUpdatePodcast[45] ||
-                        item.id == likeUpdatePodcast[46] ||
-                        item.id == likeUpdatePodcast[47] ||
-                        item.id == likeUpdatePodcast[48] ||
-                        item.id == likeUpdatePodcast[49] ||
-                        item.id == likeUpdatePodcast[50] ||
-                        item.id == likeUpdatePodcast[51] ||
-                        item.id == likeUpdatePodcast[52] ||
-                        item.id == likeUpdatePodcast[53] ||
-                        item.id == likeUpdatePodcast[54] ||
-                        item.id == likeUpdatePodcast[55] ||
-                        item.id == likeUpdatePodcast[56] ||
-                        item.id == likeUpdatePodcast[57] ||
-                        item.id == likeUpdatePodcast[58] ||
-                        item.id == likeUpdatePodcast[59] ||
-                        item.id == likeUpdatePodcast[60] ||
-                        item.id == likeUpdatePodcast[61] ||
-                        item.id == likeUpdatePodcast[62] ||
-                        item.id == likeUpdatePodcast[63] ||
-                        item.id == likeUpdatePodcast[64] ||
-                        item.id == likeUpdatePodcast[65] ||
-                        item.id == likeUpdatePodcast[66] ||
-                        item.id == likeUpdatePodcast[67] ||
-                        item.id == likeUpdatePodcast[68] ||
-                        item.id == likeUpdatePodcast[69] ||
-                        item.id == likeUpdatePodcast[70] ||
-                        item.id == likeUpdatePodcast[71] ||
-                        item.id == likeUpdatePodcast[72] ||
-                        item.id == likeUpdatePodcast[73] ||
-                        item.id == likeUpdatePodcast[74] ||
-                        item.id == likeUpdatePodcast[75] ||
-                        item.id == likeUpdatePodcast[76] ||
-                        item.id == likeUpdatePodcast[77] ||
-                        item.id == likeUpdatePodcast[78] ||
-                        item.id == likeUpdatePodcast[79] ||
-                        item.id == likeUpdatePodcast[80] ||
-                        item.id == likeUpdatePodcast[81] ||
-                        item.id == likeUpdatePodcast[82] ||
-                        item.id == likeUpdatePodcast[83] ||
-                        item.id == likeUpdatePodcast[84] ||
-                        item.id == likeUpdatePodcast[85] ||
-                        item.id == likeUpdatePodcast[86] ||
-                        item.id == likeUpdatePodcast[87] ||
-                        item.id == likeUpdatePodcast[88] ||
-                        item.id == likeUpdatePodcast[89] ||
-                        item.id == likeUpdatePodcast[90] ||
-                        item.id == likeUpdatePodcast[91] ||
-                        item.id == likeUpdatePodcast[92] ||
-                        item.id == likeUpdatePodcast[93] ||
-                        item.id == likeUpdatePodcast[94] ||
-                        item.id == likeUpdatePodcast[95] ||
-                        item.id == likeUpdatePodcast[96] ||
-                        item.id == likeUpdatePodcast[97] ||
-                        item.id == likeUpdatePodcast[98] ||
-                        item.id == likeUpdatePodcast[99] ||
-                        item.id == likeUpdatePodcast[100] ? (
+                          item.id == likeUpdatePodcast[1] ||
+                          item.id == likeUpdatePodcast[2] ||
+                          item.id == likeUpdatePodcast[3] ||
+                          item.id == likeUpdatePodcast[4] ||
+                          item.id == likeUpdatePodcast[5] ||
+                          item.id == likeUpdatePodcast[6] ||
+                          item.id == likeUpdatePodcast[7] ||
+                          item.id == likeUpdatePodcast[8] ||
+                          item.id == likeUpdatePodcast[9] ||
+                          item.id == likeUpdatePodcast[10] ||
+                          item.id == likeUpdatePodcast[11] ||
+                          item.id == likeUpdatePodcast[12] ||
+                          item.id == likeUpdatePodcast[13] ||
+                          item.id == likeUpdatePodcast[14] ||
+                          item.id == likeUpdatePodcast[15] ||
+                          item.id == likeUpdatePodcast[16] ||
+                          item.id == likeUpdatePodcast[17] ||
+                          item.id == likeUpdatePodcast[18] ||
+                          item.id == likeUpdatePodcast[19] ||
+                          item.id == likeUpdatePodcast[20] ||
+                          item.id == likeUpdatePodcast[21] ||
+                          item.id == likeUpdatePodcast[22] ||
+                          item.id == likeUpdatePodcast[23] ||
+                          item.id == likeUpdatePodcast[24] ||
+                          item.id == likeUpdatePodcast[25] ||
+                          item.id == likeUpdatePodcast[26] ||
+                          item.id == likeUpdatePodcast[27] ||
+                          item.id == likeUpdatePodcast[28] ||
+                          item.id == likeUpdatePodcast[29] ||
+                          item.id == likeUpdatePodcast[30] ||
+                          item.id == likeUpdatePodcast[31] ||
+                          item.id == likeUpdatePodcast[32] ||
+                          item.id == likeUpdatePodcast[33] ||
+                          item.id == likeUpdatePodcast[34] ||
+                          item.id == likeUpdatePodcast[35] ||
+                          item.id == likeUpdatePodcast[36] ||
+                          item.id == likeUpdatePodcast[37] ||
+                          item.id == likeUpdatePodcast[38] ||
+                          item.id == likeUpdatePodcast[39] ||
+                          item.id == likeUpdatePodcast[40] ||
+                          item.id == likeUpdatePodcast[41] ||
+                          item.id == likeUpdatePodcast[42] ||
+                          item.id == likeUpdatePodcast[43] ||
+                          item.id == likeUpdatePodcast[44] ||
+                          item.id == likeUpdatePodcast[45] ||
+                          item.id == likeUpdatePodcast[46] ||
+                          item.id == likeUpdatePodcast[47] ||
+                          item.id == likeUpdatePodcast[48] ||
+                          item.id == likeUpdatePodcast[49] ||
+                          item.id == likeUpdatePodcast[50] ||
+                          item.id == likeUpdatePodcast[51] ||
+                          item.id == likeUpdatePodcast[52] ||
+                          item.id == likeUpdatePodcast[53] ||
+                          item.id == likeUpdatePodcast[54] ||
+                          item.id == likeUpdatePodcast[55] ||
+                          item.id == likeUpdatePodcast[56] ||
+                          item.id == likeUpdatePodcast[57] ||
+                          item.id == likeUpdatePodcast[58] ||
+                          item.id == likeUpdatePodcast[59] ||
+                          item.id == likeUpdatePodcast[60] ||
+                          item.id == likeUpdatePodcast[61] ||
+                          item.id == likeUpdatePodcast[62] ||
+                          item.id == likeUpdatePodcast[63] ||
+                          item.id == likeUpdatePodcast[64] ||
+                          item.id == likeUpdatePodcast[65] ||
+                          item.id == likeUpdatePodcast[66] ||
+                          item.id == likeUpdatePodcast[67] ||
+                          item.id == likeUpdatePodcast[68] ||
+                          item.id == likeUpdatePodcast[69] ||
+                          item.id == likeUpdatePodcast[70] ||
+                          item.id == likeUpdatePodcast[71] ||
+                          item.id == likeUpdatePodcast[72] ||
+                          item.id == likeUpdatePodcast[73] ||
+                          item.id == likeUpdatePodcast[74] ||
+                          item.id == likeUpdatePodcast[75] ||
+                          item.id == likeUpdatePodcast[76] ||
+                          item.id == likeUpdatePodcast[77] ||
+                          item.id == likeUpdatePodcast[78] ||
+                          item.id == likeUpdatePodcast[79] ||
+                          item.id == likeUpdatePodcast[80] ||
+                          item.id == likeUpdatePodcast[81] ||
+                          item.id == likeUpdatePodcast[82] ||
+                          item.id == likeUpdatePodcast[83] ||
+                          item.id == likeUpdatePodcast[84] ||
+                          item.id == likeUpdatePodcast[85] ||
+                          item.id == likeUpdatePodcast[86] ||
+                          item.id == likeUpdatePodcast[87] ||
+                          item.id == likeUpdatePodcast[88] ||
+                          item.id == likeUpdatePodcast[89] ||
+                          item.id == likeUpdatePodcast[90] ||
+                          item.id == likeUpdatePodcast[91] ||
+                          item.id == likeUpdatePodcast[92] ||
+                          item.id == likeUpdatePodcast[93] ||
+                          item.id == likeUpdatePodcast[94] ||
+                          item.id == likeUpdatePodcast[95] ||
+                          item.id == likeUpdatePodcast[96] ||
+                          item.id == likeUpdatePodcast[97] ||
+                          item.id == likeUpdatePodcast[98] ||
+                          item.id == likeUpdatePodcast[99] ||
+                          item.id == likeUpdatePodcast[100] ? (
                           <View style={{ flexDirection: "row" }}>
                             <Icon
                               type="fontisto"
@@ -2210,10 +2206,9 @@ export default function Home(props) {
                             >
                               {
                                 //mostrarViews(item.id)
-                                `${
-                                  obtenTotalFavoritos(item.id) == undefined
-                                    ? 1
-                                    : parseInt(obtenTotalFavoritos(item.id)) + 1
+                                `${obtenTotalFavoritos(item.id) == undefined
+                                  ? 1
+                                  : parseInt(obtenTotalFavoritos(item.id)) + 1
                                 }`
                               }
                             </Text>
@@ -2227,11 +2222,10 @@ export default function Home(props) {
                               >
                                 {
                                   //mostrarViews(item.id)
-                                  `${
-                                    obtenTotalFavoritos(item.id) == undefined
-                                      ? ""
-                                      : parseInt(obtenTotalFavoritos(item.id)) +
-                                        1
+                                  `${obtenTotalFavoritos(item.id) == undefined
+                                    ? ""
+                                    : parseInt(obtenTotalFavoritos(item.id)) +
+                                    1
                                   }`
                                 }
                               </Text>
@@ -2442,32 +2436,32 @@ export default function Home(props) {
                 </View>
                 <View style={{ margin: 10 }}>
                   {item.id == favoritesUpdatePodcast[0] ||
-                  item.id == favoritesUpdatePodcast[1] ||
-                  item.id == favoritesUpdatePodcast[2] ||
-                  item.id == favoritesUpdatePodcast[3] ||
-                  item.id == favoritesUpdatePodcast[4] ||
-                  item.id == favoritesUpdatePodcast[5] ||
-                  item.id == favoritesUpdatePodcast[6] ||
-                  item.id == favoritesUpdatePodcast[7] ||
-                  item.id == favoritesUpdatePodcast[8] ||
-                  item.id == favoritesUpdatePodcast[9] ||
-                  item.id == favoritesUpdatePodcast[10] ||
-                  item.id == favoritesUpdatePodcast[11] ||
-                  item.id == favoritesUpdatePodcast[12] ||
-                  item.id == favoritesUpdatePodcast[13] ||
-                  item.id == favoritesUpdatePodcast[14] ||
-                  item.id == favoritesUpdatePodcast[15] ||
-                  item.id == favoritesUpdatePodcast[16] ||
-                  item.id == favoritesUpdatePodcast[17] ||
-                  item.id == favoritesUpdatePodcast[18] ||
-                  item.id == favoritesUpdatePodcast[19] ||
-                  item.id == favoritesUpdatePodcast[20] ||
-                  item.id == favoritesUpdatePodcast[21] ||
-                  item.id == favoritesUpdatePodcast[22] ||
-                  item.id == favoritesUpdatePodcast[23] ||
-                  item.id == favoritesUpdatePodcast[24] ||
-                  item.id == favoritesUpdatePodcast[25] ||
-                  item.id == favoritesUpdatePodcast[26] ? (
+                    item.id == favoritesUpdatePodcast[1] ||
+                    item.id == favoritesUpdatePodcast[2] ||
+                    item.id == favoritesUpdatePodcast[3] ||
+                    item.id == favoritesUpdatePodcast[4] ||
+                    item.id == favoritesUpdatePodcast[5] ||
+                    item.id == favoritesUpdatePodcast[6] ||
+                    item.id == favoritesUpdatePodcast[7] ||
+                    item.id == favoritesUpdatePodcast[8] ||
+                    item.id == favoritesUpdatePodcast[9] ||
+                    item.id == favoritesUpdatePodcast[10] ||
+                    item.id == favoritesUpdatePodcast[11] ||
+                    item.id == favoritesUpdatePodcast[12] ||
+                    item.id == favoritesUpdatePodcast[13] ||
+                    item.id == favoritesUpdatePodcast[14] ||
+                    item.id == favoritesUpdatePodcast[15] ||
+                    item.id == favoritesUpdatePodcast[16] ||
+                    item.id == favoritesUpdatePodcast[17] ||
+                    item.id == favoritesUpdatePodcast[18] ||
+                    item.id == favoritesUpdatePodcast[19] ||
+                    item.id == favoritesUpdatePodcast[20] ||
+                    item.id == favoritesUpdatePodcast[21] ||
+                    item.id == favoritesUpdatePodcast[22] ||
+                    item.id == favoritesUpdatePodcast[23] ||
+                    item.id == favoritesUpdatePodcast[24] ||
+                    item.id == favoritesUpdatePodcast[25] ||
+                    item.id == favoritesUpdatePodcast[26] ? (
                     <Button
                       icon={{
                         name: "playlist-play",
@@ -2648,106 +2642,106 @@ export default function Home(props) {
                         />
 
                         {item.id == likeUpdatePodcast[0] ||
-                        item.id == likeUpdatePodcast[1] ||
-                        item.id == likeUpdatePodcast[2] ||
-                        item.id == likeUpdatePodcast[3] ||
-                        item.id == likeUpdatePodcast[4] ||
-                        item.id == likeUpdatePodcast[5] ||
-                        item.id == likeUpdatePodcast[6] ||
-                        item.id == likeUpdatePodcast[7] ||
-                        item.id == likeUpdatePodcast[8] ||
-                        item.id == likeUpdatePodcast[9] ||
-                        item.id == likeUpdatePodcast[10] ||
-                        item.id == likeUpdatePodcast[11] ||
-                        item.id == likeUpdatePodcast[12] ||
-                        item.id == likeUpdatePodcast[13] ||
-                        item.id == likeUpdatePodcast[14] ||
-                        item.id == likeUpdatePodcast[15] ||
-                        item.id == likeUpdatePodcast[16] ||
-                        item.id == likeUpdatePodcast[17] ||
-                        item.id == likeUpdatePodcast[18] ||
-                        item.id == likeUpdatePodcast[19] ||
-                        item.id == likeUpdatePodcast[20] ||
-                        item.id == likeUpdatePodcast[21] ||
-                        item.id == likeUpdatePodcast[22] ||
-                        item.id == likeUpdatePodcast[23] ||
-                        item.id == likeUpdatePodcast[24] ||
-                        item.id == likeUpdatePodcast[25] ||
-                        item.id == likeUpdatePodcast[26] ||
-                        item.id == likeUpdatePodcast[27] ||
-                        item.id == likeUpdatePodcast[28] ||
-                        item.id == likeUpdatePodcast[29] ||
-                        item.id == likeUpdatePodcast[30] ||
-                        item.id == likeUpdatePodcast[31] ||
-                        item.id == likeUpdatePodcast[32] ||
-                        item.id == likeUpdatePodcast[33] ||
-                        item.id == likeUpdatePodcast[34] ||
-                        item.id == likeUpdatePodcast[35] ||
-                        item.id == likeUpdatePodcast[36] ||
-                        item.id == likeUpdatePodcast[37] ||
-                        item.id == likeUpdatePodcast[38] ||
-                        item.id == likeUpdatePodcast[39] ||
-                        item.id == likeUpdatePodcast[40] ||
-                        item.id == likeUpdatePodcast[41] ||
-                        item.id == likeUpdatePodcast[42] ||
-                        item.id == likeUpdatePodcast[43] ||
-                        item.id == likeUpdatePodcast[44] ||
-                        item.id == likeUpdatePodcast[45] ||
-                        item.id == likeUpdatePodcast[46] ||
-                        item.id == likeUpdatePodcast[47] ||
-                        item.id == likeUpdatePodcast[48] ||
-                        item.id == likeUpdatePodcast[49] ||
-                        item.id == likeUpdatePodcast[50] ||
-                        item.id == likeUpdatePodcast[51] ||
-                        item.id == likeUpdatePodcast[52] ||
-                        item.id == likeUpdatePodcast[53] ||
-                        item.id == likeUpdatePodcast[54] ||
-                        item.id == likeUpdatePodcast[55] ||
-                        item.id == likeUpdatePodcast[56] ||
-                        item.id == likeUpdatePodcast[57] ||
-                        item.id == likeUpdatePodcast[58] ||
-                        item.id == likeUpdatePodcast[59] ||
-                        item.id == likeUpdatePodcast[60] ||
-                        item.id == likeUpdatePodcast[61] ||
-                        item.id == likeUpdatePodcast[62] ||
-                        item.id == likeUpdatePodcast[63] ||
-                        item.id == likeUpdatePodcast[64] ||
-                        item.id == likeUpdatePodcast[65] ||
-                        item.id == likeUpdatePodcast[66] ||
-                        item.id == likeUpdatePodcast[67] ||
-                        item.id == likeUpdatePodcast[68] ||
-                        item.id == likeUpdatePodcast[69] ||
-                        item.id == likeUpdatePodcast[70] ||
-                        item.id == likeUpdatePodcast[71] ||
-                        item.id == likeUpdatePodcast[72] ||
-                        item.id == likeUpdatePodcast[73] ||
-                        item.id == likeUpdatePodcast[74] ||
-                        item.id == likeUpdatePodcast[75] ||
-                        item.id == likeUpdatePodcast[76] ||
-                        item.id == likeUpdatePodcast[77] ||
-                        item.id == likeUpdatePodcast[78] ||
-                        item.id == likeUpdatePodcast[79] ||
-                        item.id == likeUpdatePodcast[80] ||
-                        item.id == likeUpdatePodcast[81] ||
-                        item.id == likeUpdatePodcast[82] ||
-                        item.id == likeUpdatePodcast[83] ||
-                        item.id == likeUpdatePodcast[84] ||
-                        item.id == likeUpdatePodcast[85] ||
-                        item.id == likeUpdatePodcast[86] ||
-                        item.id == likeUpdatePodcast[87] ||
-                        item.id == likeUpdatePodcast[88] ||
-                        item.id == likeUpdatePodcast[89] ||
-                        item.id == likeUpdatePodcast[90] ||
-                        item.id == likeUpdatePodcast[91] ||
-                        item.id == likeUpdatePodcast[92] ||
-                        item.id == likeUpdatePodcast[93] ||
-                        item.id == likeUpdatePodcast[94] ||
-                        item.id == likeUpdatePodcast[95] ||
-                        item.id == likeUpdatePodcast[96] ||
-                        item.id == likeUpdatePodcast[97] ||
-                        item.id == likeUpdatePodcast[98] ||
-                        item.id == likeUpdatePodcast[99] ||
-                        item.id == likeUpdatePodcast[100] ? (
+                          item.id == likeUpdatePodcast[1] ||
+                          item.id == likeUpdatePodcast[2] ||
+                          item.id == likeUpdatePodcast[3] ||
+                          item.id == likeUpdatePodcast[4] ||
+                          item.id == likeUpdatePodcast[5] ||
+                          item.id == likeUpdatePodcast[6] ||
+                          item.id == likeUpdatePodcast[7] ||
+                          item.id == likeUpdatePodcast[8] ||
+                          item.id == likeUpdatePodcast[9] ||
+                          item.id == likeUpdatePodcast[10] ||
+                          item.id == likeUpdatePodcast[11] ||
+                          item.id == likeUpdatePodcast[12] ||
+                          item.id == likeUpdatePodcast[13] ||
+                          item.id == likeUpdatePodcast[14] ||
+                          item.id == likeUpdatePodcast[15] ||
+                          item.id == likeUpdatePodcast[16] ||
+                          item.id == likeUpdatePodcast[17] ||
+                          item.id == likeUpdatePodcast[18] ||
+                          item.id == likeUpdatePodcast[19] ||
+                          item.id == likeUpdatePodcast[20] ||
+                          item.id == likeUpdatePodcast[21] ||
+                          item.id == likeUpdatePodcast[22] ||
+                          item.id == likeUpdatePodcast[23] ||
+                          item.id == likeUpdatePodcast[24] ||
+                          item.id == likeUpdatePodcast[25] ||
+                          item.id == likeUpdatePodcast[26] ||
+                          item.id == likeUpdatePodcast[27] ||
+                          item.id == likeUpdatePodcast[28] ||
+                          item.id == likeUpdatePodcast[29] ||
+                          item.id == likeUpdatePodcast[30] ||
+                          item.id == likeUpdatePodcast[31] ||
+                          item.id == likeUpdatePodcast[32] ||
+                          item.id == likeUpdatePodcast[33] ||
+                          item.id == likeUpdatePodcast[34] ||
+                          item.id == likeUpdatePodcast[35] ||
+                          item.id == likeUpdatePodcast[36] ||
+                          item.id == likeUpdatePodcast[37] ||
+                          item.id == likeUpdatePodcast[38] ||
+                          item.id == likeUpdatePodcast[39] ||
+                          item.id == likeUpdatePodcast[40] ||
+                          item.id == likeUpdatePodcast[41] ||
+                          item.id == likeUpdatePodcast[42] ||
+                          item.id == likeUpdatePodcast[43] ||
+                          item.id == likeUpdatePodcast[44] ||
+                          item.id == likeUpdatePodcast[45] ||
+                          item.id == likeUpdatePodcast[46] ||
+                          item.id == likeUpdatePodcast[47] ||
+                          item.id == likeUpdatePodcast[48] ||
+                          item.id == likeUpdatePodcast[49] ||
+                          item.id == likeUpdatePodcast[50] ||
+                          item.id == likeUpdatePodcast[51] ||
+                          item.id == likeUpdatePodcast[52] ||
+                          item.id == likeUpdatePodcast[53] ||
+                          item.id == likeUpdatePodcast[54] ||
+                          item.id == likeUpdatePodcast[55] ||
+                          item.id == likeUpdatePodcast[56] ||
+                          item.id == likeUpdatePodcast[57] ||
+                          item.id == likeUpdatePodcast[58] ||
+                          item.id == likeUpdatePodcast[59] ||
+                          item.id == likeUpdatePodcast[60] ||
+                          item.id == likeUpdatePodcast[61] ||
+                          item.id == likeUpdatePodcast[62] ||
+                          item.id == likeUpdatePodcast[63] ||
+                          item.id == likeUpdatePodcast[64] ||
+                          item.id == likeUpdatePodcast[65] ||
+                          item.id == likeUpdatePodcast[66] ||
+                          item.id == likeUpdatePodcast[67] ||
+                          item.id == likeUpdatePodcast[68] ||
+                          item.id == likeUpdatePodcast[69] ||
+                          item.id == likeUpdatePodcast[70] ||
+                          item.id == likeUpdatePodcast[71] ||
+                          item.id == likeUpdatePodcast[72] ||
+                          item.id == likeUpdatePodcast[73] ||
+                          item.id == likeUpdatePodcast[74] ||
+                          item.id == likeUpdatePodcast[75] ||
+                          item.id == likeUpdatePodcast[76] ||
+                          item.id == likeUpdatePodcast[77] ||
+                          item.id == likeUpdatePodcast[78] ||
+                          item.id == likeUpdatePodcast[79] ||
+                          item.id == likeUpdatePodcast[80] ||
+                          item.id == likeUpdatePodcast[81] ||
+                          item.id == likeUpdatePodcast[82] ||
+                          item.id == likeUpdatePodcast[83] ||
+                          item.id == likeUpdatePodcast[84] ||
+                          item.id == likeUpdatePodcast[85] ||
+                          item.id == likeUpdatePodcast[86] ||
+                          item.id == likeUpdatePodcast[87] ||
+                          item.id == likeUpdatePodcast[88] ||
+                          item.id == likeUpdatePodcast[89] ||
+                          item.id == likeUpdatePodcast[90] ||
+                          item.id == likeUpdatePodcast[91] ||
+                          item.id == likeUpdatePodcast[92] ||
+                          item.id == likeUpdatePodcast[93] ||
+                          item.id == likeUpdatePodcast[94] ||
+                          item.id == likeUpdatePodcast[95] ||
+                          item.id == likeUpdatePodcast[96] ||
+                          item.id == likeUpdatePodcast[97] ||
+                          item.id == likeUpdatePodcast[98] ||
+                          item.id == likeUpdatePodcast[99] ||
+                          item.id == likeUpdatePodcast[100] ? (
                           <View style={{ flexDirection: "row" }}>
                             <Icon
                               type="fontisto"
@@ -2771,10 +2765,9 @@ export default function Home(props) {
                             >
                               {
                                 //mostrarViews(item.id)
-                                `${
-                                  obtenTotalFavoritos(item.id) == undefined
-                                    ? 1
-                                    : parseInt(obtenTotalFavoritos(item.id)) + 1
+                                `${obtenTotalFavoritos(item.id) == undefined
+                                  ? 1
+                                  : parseInt(obtenTotalFavoritos(item.id)) + 1
                                 }`
                               }
                             </Text>
@@ -2788,11 +2781,10 @@ export default function Home(props) {
                               >
                                 {
                                   //mostrarViews(item.id)
-                                  `${
-                                    obtenTotalFavoritos(item.id) == undefined
-                                      ? ""
-                                      : parseInt(obtenTotalFavoritos(item.id)) +
-                                        1
+                                  `${obtenTotalFavoritos(item.id) == undefined
+                                    ? ""
+                                    : parseInt(obtenTotalFavoritos(item.id)) +
+                                    1
                                   }`
                                 }
                               </Text>
@@ -3004,32 +2996,32 @@ export default function Home(props) {
                 </TouchableOpacity>
                 <View style={{ margin: 10 }}>
                   {item.id == favoritesUpdatePodcast[0] ||
-                  item.id == favoritesUpdatePodcast[1] ||
-                  item.id == favoritesUpdatePodcast[2] ||
-                  item.id == favoritesUpdatePodcast[3] ||
-                  item.id == favoritesUpdatePodcast[4] ||
-                  item.id == favoritesUpdatePodcast[5] ||
-                  item.id == favoritesUpdatePodcast[6] ||
-                  item.id == favoritesUpdatePodcast[7] ||
-                  item.id == favoritesUpdatePodcast[8] ||
-                  item.id == favoritesUpdatePodcast[9] ||
-                  item.id == favoritesUpdatePodcast[10] ||
-                  item.id == favoritesUpdatePodcast[11] ||
-                  item.id == favoritesUpdatePodcast[12] ||
-                  item.id == favoritesUpdatePodcast[13] ||
-                  item.id == favoritesUpdatePodcast[14] ||
-                  item.id == favoritesUpdatePodcast[15] ||
-                  item.id == favoritesUpdatePodcast[16] ||
-                  item.id == favoritesUpdatePodcast[17] ||
-                  item.id == favoritesUpdatePodcast[18] ||
-                  item.id == favoritesUpdatePodcast[19] ||
-                  item.id == favoritesUpdatePodcast[20] ||
-                  item.id == favoritesUpdatePodcast[21] ||
-                  item.id == favoritesUpdatePodcast[22] ||
-                  item.id == favoritesUpdatePodcast[23] ||
-                  item.id == favoritesUpdatePodcast[24] ||
-                  item.id == favoritesUpdatePodcast[25] ||
-                  item.id == favoritesUpdatePodcast[26] ? (
+                    item.id == favoritesUpdatePodcast[1] ||
+                    item.id == favoritesUpdatePodcast[2] ||
+                    item.id == favoritesUpdatePodcast[3] ||
+                    item.id == favoritesUpdatePodcast[4] ||
+                    item.id == favoritesUpdatePodcast[5] ||
+                    item.id == favoritesUpdatePodcast[6] ||
+                    item.id == favoritesUpdatePodcast[7] ||
+                    item.id == favoritesUpdatePodcast[8] ||
+                    item.id == favoritesUpdatePodcast[9] ||
+                    item.id == favoritesUpdatePodcast[10] ||
+                    item.id == favoritesUpdatePodcast[11] ||
+                    item.id == favoritesUpdatePodcast[12] ||
+                    item.id == favoritesUpdatePodcast[13] ||
+                    item.id == favoritesUpdatePodcast[14] ||
+                    item.id == favoritesUpdatePodcast[15] ||
+                    item.id == favoritesUpdatePodcast[16] ||
+                    item.id == favoritesUpdatePodcast[17] ||
+                    item.id == favoritesUpdatePodcast[18] ||
+                    item.id == favoritesUpdatePodcast[19] ||
+                    item.id == favoritesUpdatePodcast[20] ||
+                    item.id == favoritesUpdatePodcast[21] ||
+                    item.id == favoritesUpdatePodcast[22] ||
+                    item.id == favoritesUpdatePodcast[23] ||
+                    item.id == favoritesUpdatePodcast[24] ||
+                    item.id == favoritesUpdatePodcast[25] ||
+                    item.id == favoritesUpdatePodcast[26] ? (
                     <Button
                       icon={{
                         name: "playlist-play",
