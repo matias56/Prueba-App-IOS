@@ -26,7 +26,6 @@ jobs:
           rm -rf agriFM
 
       - name: Bump minimum iOS version to 13.0
-        # Fixes BOTH the Podfile and the main App's internal Xcode configuration
         run: |
           sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
           sed -i '' 's/IPHONEOS_DEPLOYMENT_TARGET = .*;/IPHONEOS_DEPLOYMENT_TARGET = 13.0;/g' ios/agriFM.xcodeproj/project.pbxproj
@@ -52,43 +51,46 @@ jobs:
 
       - name: Completely Overwrite glog configuration
         run: |
-            cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
-            #!/bin/bash
-            set -e
-            
-            # 1. Destroy the poisoned CocoaPods environment variables
-            unset CC CXX CFLAGS CXXFLAGS LDFLAGS
-            
-            # 2. Force modern 64-bit architecture
-            export CC="$(xcrun -find -sdk iphoneos cc) -arch arm64 -isysroot $(xcrun -sdk iphoneos --show-sdk-path)"
-            export CXX="$CC"
-            export CFLAGS="-arch arm64"
-            export CXXFLAGS="-arch arm64"
-            export LDFLAGS="-arch arm64"
-            
-            if [ -h "test-driver" ]; then
-                rm test-driver
-            fi
-            
-            # 3. Safely download modern Apple Silicon configs from a reliable raw GitHub mirror
-            # (The -f flag ensures it will never accidentally save an HTML error page again)
-            curl -sfL -o config.sub 'https://raw.githubusercontent.com/gcc-mirror/gcc/master/config.sub'
-            curl -sfL -o config.guess 'https://raw.githubusercontent.com/gcc-mirror/gcc/master/config.guess'
-            chmod +x config.sub config.guess
-            
-            # 4. Configure with the correct Apple Silicon host
-            ./configure --host=arm64-apple-darwin
-            
-            # 5. Copy the required headers back to React Native
-            EXPORTED_INCLUDE_DIR="exported/glog"
-            mkdir -p exported/glog
-            cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/"
-            cp -f src/glog/logging.h "$EXPORTED_INCLUDE_DIR/"
-            cp -f src/glog/raw_logging.h "$EXPORTED_INCLUDE_DIR/"
-            cp -f src/glog/stl_logging.h "$EXPORTED_INCLUDE_DIR/"
-            cp -f src/glog/vlog_is_on.h "$EXPORTED_INCLUDE_DIR/"
-            EOF
-            chmod +x node_modules/react-native/scripts/ios-configure-glog.sh
+          cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
+          #!/bin/bash
+          set -e
+          
+          # 1. Destroy the poisoned CocoaPods environment variables
+          unset CC CXX CFLAGS CXXFLAGS LDFLAGS
+          
+          # 2. Force modern 64-bit architecture
+          export CC="$(xcrun -find -sdk iphoneos cc) -arch arm64 -isysroot $(xcrun -sdk iphoneos --show-sdk-path)"
+          export CXX="$CC"
+          export CFLAGS="-arch arm64"
+          export CXXFLAGS="-arch arm64"
+          export LDFLAGS="-arch arm64"
+          
+          if [ -h "test-driver" ]; then
+              rm test-driver
+          fi
+          
+          # 3. Safely download modern Apple Silicon configs
+          curl -sfL -o config.sub 'https://raw.githubusercontent.com/gcc-mirror/gcc/master/config.sub'
+          curl -sfL -o config.guess 'https://raw.githubusercontent.com/gcc-mirror/gcc/master/config.guess'
+          chmod +x config.sub config.guess
+          
+          # 4. Configure with the correct Apple Silicon host
+          ./configure --host=arm64-apple-darwin
+          
+          # 5. Copy the required headers back to React Native
+          EXPORTED_INCLUDE_DIR="exported/glog"
+          mkdir -p exported/glog
+          cp -f src/glog/log_severity.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/raw_logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/stl_logging.h "$EXPORTED_INCLUDE_DIR/"
+          cp -f src/glog/vlog_is_on.h "$EXPORTED_INCLUDE_DIR/"
+          EOF
+          chmod +x node_modules/react-native/scripts/ios-configure-glog.sh
+
+      - name: Patch Yoga for modern C++ compilers
+        # Removes the deprecated space in literal operators that crashes the modern Xcode compiler
+        run: sed -i '' 's/operator"" _/operator""_/g' node_modules/react-native/ReactCommon/yoga/yoga/YGValue.h
 
       - name: Clear Poisoned CocoaPods Cache
         run: rm -rf ~/Library/Caches/CocoaPods
