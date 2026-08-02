@@ -31,8 +31,24 @@ jobs:
       - name: Disable Flipper (Fixes Flipper-Glog bug)
         run: sed -i '' 's/use_flipper!/# use_flipper!/g' ios/Podfile
 
+      - name: Force all Native Pods to iOS 13.0
+        # Injects a ruby script into the Podfile to forcefully upgrade all outdated third-party dependencies
+        run: |
+          ruby -e "
+          file = 'ios/Podfile'
+          content = File.read(file)
+          hook = %q{
+            installer.pods_project.targets.each do |target|
+              target.build_configurations.each do |config|
+                config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+              end
+            end
+          }
+          content.sub!('react_native_post_install(installer)', %Q{react_native_post_install(installer)\n#{hook}})
+          File.write(file, content)
+          "
+
       - name: Completely Overwrite glog configuration
-        # This replaces the file, destroys CocoaPods' variables, forces arm64, and safely fetches GNU configs
         run: |
           cat << 'EOF' > node_modules/react-native/scripts/ios-configure-glog.sh
           #!/bin/bash
@@ -52,7 +68,7 @@ jobs:
               rm test-driver
           fi
           
-          # 3. Safely download modern Apple Silicon configs (Added -L and chmod +x)
+          # 3. Safely download modern Apple Silicon configs
           curl -sL -o config.sub 'https://git.savannah.gnu.org/cgit/config.git/plain/config.sub'
           curl -sL -o config.guess 'https://git.savannah.gnu.org/cgit/config.git/plain/config.guess'
           chmod +x config.sub config.guess
