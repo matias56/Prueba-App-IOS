@@ -15,19 +15,24 @@ jobs:
       - name: Install dependencies
         run: npm install --legacy-peer-deps
 
-      - name: Clean up broken manual folder
-        # This deletes the corrupted Windows folder so we start fresh
-        run: rm -rf ios
+      - name: Purge accidental Expo contamination
+        # This destroys the rogue dependency that was crashing CocoaPods earlier
+        run: npm uninstall expo --legacy-peer-deps
 
-      - name: Generate correct Expo iOS project
-        # Let the cloud build a perfect, Expo-linked 'agriFM' folder
-        run: npx --yes expo prebuild --platform ios --no-install
+      - name: Generate Clean iOS Project
+        # Uses the official core generator to build a perfect, bare ios folder named agriFM
+        run: |
+          rm -rf ios
+          npx react-native init agriFM --version 0.64.3 --skip-install
+          mv agriFM/ios ./ios
+          rm -rf agriFM
 
-      - name: Bump minimum iOS version to 13.0 automatically
-        # This safely edits the Podfile without breaking the auto-linking scripts
+      - name: Bump minimum iOS version to 13.0
+        # Safely updates the Podfile deployment target
         run: sed -i '' "s/platform :ios, .*/platform :ios, '13.0'/g" ios/Podfile
 
       - name: Patch glog for modern Xcode
+        # Strips out the banned 32-bit architectures
         run: |
           sed -i '' -e 's/-arch armv7s//g' -e 's/-arch armv7//g' -e 's/-arch i386//g' node_modules/react-native/scripts/ios-configure-glog.sh
 
